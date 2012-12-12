@@ -57,11 +57,13 @@ Java_umontreal_iro_lecuyer_util_GlobalCPUTimeChrono_Heure (JNIEnv *env, jclass c
   jarray[0] = jarray[1] / TIC;
   jarray[1] = (jarray[1] % TIC) * 1000000 / TIC;
 #elif defined(_WIN32)
+  ULONGLONG rawTime;
+  
   /* Strongly inspired from
    * http://www.javaworld.com/javaworld/javaqa/2002-11/01-qa-1108-cpu.html */
   GetProcessTimes (currentProcess, &creationTime, &exitTime,
 		   &kernelTime, &userTime);
-  ULONGLONG rawTime = (ULONGLONG)(fileTimeToInt64 (&kernelTime) +
+  rawTime = (ULONGLONG)(fileTimeToInt64 (&kernelTime) +
                                   fileTimeToInt64 (&userTime));
   /* We have to divide by 10000 to get milliseconds out of
    * the computed time. So we divide by 10000*1000 to get seconds. */

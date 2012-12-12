@@ -12,6 +12,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cmake.generator>Visual Studio 10</cmake.generator>
+        <cmake.platform>Win32</cmake.platform>
+        <cmake.config>Release</cmake.config>
     </properties>
 
     <dependencies>
@@ -50,6 +53,73 @@
     
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.googlecode.cmake-maven-project</groupId>
+                <artifactId>cmake-maven-plugin</artifactId>
+                <version>2.8.8-b1</version>
+                <executions>
+                    <execution>
+                        <id>cmake-generate</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <sourcePath>
+                                ${project.basedir}
+                            </sourcePath>
+                            <targetPath>
+                                ${project.build.directory}\native
+                            </targetPath>
+                            <generator>${cmake.generator}</generator>
+                            <environmentVariables>
+                                <key>value</key>
+                            </environmentVariables>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>cmake-compile</id>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <configuration>
+                            <config>${cmake.config}|${cmake.platform}</config>
+                            <target></target>
+                            <projectDirectory>
+                                ${project.build.directory}/native
+                            </projectDirectory>
+                            <environmentVariables>
+                                <key>value</key>
+                            </environmentVariables>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>    
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/target/classes</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.build.directory}/bin/${cmake.config}</directory>
+                                    <filtering>false</filtering>
+                                    <includes>
+                                        <include>*.dll</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <repositories>

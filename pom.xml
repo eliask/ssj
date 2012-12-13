@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ca.umontreal.iro</groupId>
@@ -9,6 +8,14 @@
 
     <name>ssj</name>
     <url>http://www.iro.umontreal.ca/~simardr/ssj/indexe.html</url>
+    <description>
+        SSJ is a Java library for stochastic simulation, developed under the direction of Pierre L'Ecuyer,
+        in the Département d'Informatique et de Recherche Opérationnelle (DIRO), at the Université de Montréal.
+        It provides facilities for generating uniform and nonuniform random variates, computing different
+        measures related to probability distributions, performing goodness-of-fit tests, applying quasi-Monte
+        Carlo methods, collecting (elementary) statistics, and programming discrete-event simulations with both
+        events and processes.
+    </description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,6 +29,39 @@
         <developerConnection>scm:git:https://github.com/codemercenary/ssj.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
+    <developers>
+        <developer>
+            <id>simardr</id>
+            <name>Richard Simard</name>
+            <email>simardr@iro.umontreal.ca</email>
+            <url>http://www.iro.umontreal.ca/~simardr/</url>
+            <organization>University of Montreal</organization>
+            <organizationUrl>http://www.iro.umontreal.ca/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>GPL</name>
+            <comments>GPL License from GNU</comments>
+            <url>http://www.gnu.org/licenses</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <contributors>
+        <contributor>
+            <name>Jason Sanchez</name>
+            <email>codemercenary@hotmail.com</email>
+            <organization>Nothing, Inc</organization>
+            <roles>
+                <role>developer</role>       
+            </roles>
+        </contributor>
+    </contributors>
 
     <dependencies>
         <dependency>
@@ -89,7 +129,6 @@
                         </goals>
                         <configuration>
                             <config>${cmake.config}|${cmake.platform}</config>
-                            <target></target>
                             <projectDirectory>
                                 ${project.build.directory}/native
                             </projectDirectory>

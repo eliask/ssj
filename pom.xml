@@ -18,8 +18,8 @@
     </properties>
     <scm>
         <url>https://github.com/codemercenary/ssj.git</url>
-        <connection>scm:git:git@github.com/codemercenary/ssj.git</connection>
-        <developerConnection>scm:git:git@github.com/codemercenary/ssj.git</developerConnection>
+        <connection>scm:git:https://github.com/codemercenary/ssj.git</connection>
+        <developerConnection>scm:git:https://github.com/codemercenary/ssj.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 

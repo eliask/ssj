@@ -1,6 +1,4 @@
-
-INCLUDE(${CMAKE_ROOT}/Modules/FindJNI.cmake)
-message(${JAVA_INCLUDE_PATH})
+find_package(JNI REQUIRED)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/target/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/target/bin)

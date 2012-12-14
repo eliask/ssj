@@ -4,7 +4,7 @@ setenv TCODEHOME <TCode home path>/tcode
 setenv SSJHOME <SSJ home path>/ssj-2
 
 # For the LaTex documentation of package charts, packages tikz and pgf
-setenv PGFLIBRARY /u/simardr/tex/pgf-2.00
+setenv PGFLIBRARY <path to pgf for LaTex>/tex/pgf-2.00
 
 if ( ! $?TCODEHOME ) then
     echo "You must set TCODEHOME before calling this script."

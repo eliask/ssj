@@ -36,23 +36,20 @@ import   java.util.Formatter;
 
 
 /**
- * This class stores data used in a 
- * {@link umontreal.iro.lecuyer.charts.CategoryChart CategoryChart}.
- * It also provides complementary tools to draw
- *  box-and-whisker plots; for example, one may
- * add or remove plots series and modify plot style. This class is linked with 
- * the JFreeChart <TT>DefaultBoxAndWhiskerCategoryDataset</TT> class to store 
- * data plots, and linked with the JFreeChart
- * <TT>BoxAndWhiskerRenderer</TT> to render the plots.
+ * This class stores data used in a {@link CategoryChart}.
+ * It also provides complementary tools to draw box-and-whisker plots; for example, one
+ * may add or remove plots series and modify plot style. This class is linked with 
+ * {@link org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset}
+ * class to store  data plots, and linked with
+ * {@link org.jfree.chart.renderer.category.BoxAndWhiskerRenderer} to render the plots.
  * 
  */
-public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
+public class BoxSeriesCollection extends SSJCategorySeriesCollection {
    final double BARWIDTH = 0.1;
 
 
    /**
-    * Creates a new <TT>BoxSeriesCollection</TT> instance with an empty dataset.
-    * 
+    * Creates a new {@link BoxSeriesCollection} instance with an empty dataset.
     */
    public BoxSeriesCollection ()  {
       renderer = new BoxAndWhiskerRenderer();
@@ -62,15 +59,12 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Creates a new <TT>BoxSeriesCollection</TT> instance with default parameters
-    *  and input series <TT>data</TT>. Only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT>
-    *  of <TT>data</TT> will taken into account.
+    * Creates a new {@link BoxSeriesCollection} instance with default parameters
+    * and input series {@code data}. Only <I>the first</I> {@code numPoints} of
+    * {@code data} will taken into account.
     * 
     * @param data point sets.
-    * 
-    *    @param numPoints Number of points
-    * 
-    * 
+    * @param numPoints Number of points
     */
    public BoxSeriesCollection (double[] data, int numPoints)  {
       renderer = new BoxAndWhiskerRenderer();
@@ -90,13 +84,10 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Creates a new <TT>BoxSeriesCollection</TT> instance with default
-    *    parameters and given data series. The input parameter represents series
-    *    of point sets.
+    * Creates a new {@link BoxSeriesCollection} instance with default parameters
+    * and given data series. The input parameter represents series of point sets.
     * 
     * @param data series of point sets.
-    * 
-    * 
     */
    public BoxSeriesCollection (double[]... data)  {
       renderer = new BoxAndWhiskerRenderer();
@@ -120,8 +111,9 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Creates a new <TT>BoxSeriesCollection</TT> instance with default parameters and given data series.
-    *    The input parameter represents a <TT>DefaultBoxAndWhiskerCategoryDataset</TT>.
+    * Creates a new {@link BoxSeriesCollection} instance with default parameters
+    * and given data series.  The input parameter represents a
+    * {@link org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset}.
     * 
     * @param data series of point sets.
     * 
@@ -135,13 +127,12 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Adds a data series into the series collection. Vector <TT>data</TT> represents
-    *    a point set.
+    * Adds a data series into the series collection.
     * 
-    * @param data point sets.
+    * @param data A point set vector
     * 
-    *    @return Integer that represent the new point set's position in the JFreeChart <TT>DefaultBoxAndWhiskerXYDataset</TT> object.
-    * 
+    * @return Integer that represent the new point set's position in
+    * {@link org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset} object.
     */
    public int add (double[] data)  {
       return add(data, data.length);
@@ -149,16 +140,14 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Adds a data series into the series collection. Vector <TT>data</TT> represents
-    *    a point set. Only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of 
-    *    <TT>data</TT> will be added to the new series.
+    * Adds a data series into the series collection. Vector {@code data} represents
+    * a point set. Only <I>the first</I> {@code numPoints} of {@code data} will be
+    * added to the new series.
     * 
     * @param data Point set
-    * 
-    *    @param numPoints Number of points to add
-    * 
-    *    @return Integer that represent the new point set's position in the JFreeChart <TT>DefaultBoxAndWhiskerXYDataset</TT> object.
-    * 
+    * @param numPoints Number of points to add
+    * @return Integer that represent the new point set's position in the
+    * {@link org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset} object.
     */
    public int add (double[] data, int numPoints)  {
       DefaultBoxAndWhiskerCategoryDataset tempSeriesCollection =
@@ -178,9 +167,7 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
     * Gets the current name of the selected series.
     * 
     * @param series series index.
-    * 
-    *    @return current name of the series.
-    * 
+    * @return current name of the series.
     */
    public String getName (int series)  {
       return (String)((DefaultBoxAndWhiskerCategoryDataset)seriesCollection).getColumnKey(series);
@@ -188,10 +175,9 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Returns the range (<SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates) min and max values.
+    * Returns the range ($y$-coordinates) min and max values.
     * 
     * @return range min and max values.
-    * 
     */
    public double[] getRangeBounds()  {
       double max=0, min=0;
@@ -216,10 +202,9 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
 
 
    /**
-    * Returns in a <TT>String</TT> all data contained in the current object.
+    * Returns in a {@link String} all data contained in the current object.
     * 
     * @return All data contained in the current object as a {@link String}.
-    * 
     */
    public String toString()  {
       Formatter formatter = new Formatter(Locale.US);
@@ -236,11 +221,8 @@ public class BoxSeriesCollection extends SSJCategorySeriesCollection  {
     * NOT IMPLEMENTED: To do.
     * 
     * @param ymin 
-    * 
-    *    @param ymax 
-    * 
-    *    @return LaTeX source code
-    * 
+    * @param ymax 
+    * @return LaTeX source code
     */
    public String toLatex (double YScale, double YShift, 
                           double ymin, double ymax)  {

@@ -31,26 +31,21 @@ import javax.swing.JFrame;
 
 /**
  * This class provides tools to create charts from data in a simple way. Its main
- * feature is to produce TikZ/PGF (see WWW link <TT><A NAME="tex2html1"
- *   HREF="http://sourceforge.net/projects/pgf/">http://sourceforge.net/projects/pgf/</A></TT>) compatible source code which can be included
- * in <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN> documents, but it can also produce charts in other formats.
- * One can easily create a new chart, and customize its appearance using methods
- * of this class, with the encapsulated
- * {@link umontreal.iro.lecuyer.charts.SSJCategorySeriesCollection SSJCategorySeriesCollection} object
- * representing the data, and an {@link umontreal.iro.lecuyer.charts.Axis Axis}
- * object representing the axis.
- * All these classes depend on the <TT>JFreeChart</TT> API (see WWW link
- * <TT><A NAME="tex2html2"
- *   HREF="http://www.jfree.org/jfreechart/">http://www.jfree.org/jfreechart/</A></TT>) which provides tools to build charts with
- * Java, to draw them, and export them to files. However, only basic features are
- * used here.
+ * feature is to produce TikZ/<A HREF="http://sourceforge.net/projects/pgf/">PGF</A>
+ * compatible source code which can be included in $\LaTeX$ documents, but it can
+ * also produce charts in other formats.  One can easily create a new chart, and
+ * customize its appearance using methods of this class, with the encapsulated
+ * {@link SSJCategorySeriesCollection} object representing the data, and an {@link Axis}
+ * object representing the axis. All these classes depend on the
+ * <A HREF="http://www.jfree.org/jfreechart/">JFreeChart</A> API  which provides
+ * tools to build charts with Java, to draw them, and export them to files. However,
+ * only basic features are used here.
  * 
  * <P>
- * Moreover, <TT>CategoryChart</TT> provides methods to plot data using a MATLAB friendly
- * syntax. None of these methods provides new features; they just propose a
- * different syntax to create charts. Therefore some features are unavailable
+ * Moreover, {@link CategoryChart} provides methods to plot data using a MATLAB
+ * friendly syntax. None of these methods provides new features; they just propose
+ * a different syntax to create charts. Therefore some features are unavailable
  * when using these methods only.
- * 
  */
 public abstract class CategoryChart  {
 
@@ -69,10 +64,9 @@ public abstract class CategoryChart  {
 
 
    /**
-    * Returns the <TT>JFreeChart</TT> object associated with this chart.
+    * Returns the {@link org.jfree.chart.JFreeChart} object associated with this chart.
     * 
-    * @return the associated JFreeChart object.
-    * 
+    * @return the associated {@link org.jfree.chart.JFreeChart} object.
     */
    public JFreeChart getJFreeChart()  {
       return chart;
@@ -80,10 +74,7 @@ public abstract class CategoryChart  {
 
 
    /**
-    * Returns the chart's range axis (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) object.
-    * 
-    * @return chart's range axis (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) object.
-    * 
+    * @return The chart's range axis $y$-axis) object.
     */
    public Axis getYAxis()  {
       return YAxis;
@@ -94,10 +85,7 @@ public abstract class CategoryChart  {
 
 
    /**
-    * Gets the current chart title.
-    * 
-    * @return Chart title.
-    * 
+    * @return The chart title.
     */
    public String getTitle()  {
       return chart.getTitle().getText();
@@ -106,11 +94,9 @@ public abstract class CategoryChart  {
 
    /**
     * Sets a title to this chart. This title will appear on the chart displayed
-    *  by method {@link #view view}.
+    * by method {@link #view}.
     * 
     * @param title chart title.
-    * 
-    * 
     */
    public void setTitle (String title)  {
       chart.setTitle(title);
@@ -118,8 +104,7 @@ public abstract class CategoryChart  {
 
 
    /**
-    * Sets chart <SPAN CLASS="MATH"><I>y</I></SPAN> range to automatic values.
-    * 
+    * Sets chart $y$ range to automatic values.
     */
    public void setAutoRange ()  {
       autoRange = true;
@@ -135,8 +120,8 @@ public abstract class CategoryChart  {
 
 
    /**
-    * Sets new <SPAN CLASS="MATH"><I>y</I></SPAN>-axis bounds, using the format:
-    * <TT>range</TT> = [<TT>ymin, ymax</TT>].
+    * Sets new $y$-axis bounds, using the format:
+    * {@code range = [ymin, ymax]}.
     * 
     * @param range new axis ranges.
     * 
@@ -154,16 +139,13 @@ public abstract class CategoryChart  {
 
    /**
     * Puts a grid on the background. It is important to note that the grid is
-    *    always shifted in such a way that it contains the axes. Thus, the grid does
-    *    not always have an intersection at the corner points; this occurs
-    *    only if the corner points are multiples of the steps: <TT>xstep</TT>
-    *    and <TT>ystep</TT> sets the step in each direction.
+    * always shifted in such a way that it contains the axes. Thus, the grid does
+    * not always have an intersection at the corner points; this occurs only if
+    * the corner points are multiples of the steps: {@code xstep} and {@code ystep}
+    * sets the step in each direction.
     * 
     * @param xstep sets the step in the x-direction.
-    * 
-    *    @param ystep sets the step in the y-direction.
-    * 
-    * 
+    * @param ystep sets the step in the y-direction.
     */
    public void enableGrid (double xstep, double ystep)  {
       this.grid = true;
@@ -173,7 +155,6 @@ public abstract class CategoryChart  {
 
    /**
     * Disables the background grid.
-    * 
     */
    public void disableGrid()  {
       this.grid = false;
@@ -181,7 +162,7 @@ public abstract class CategoryChart  {
 
 
    /**
-    * Transforms the chart into <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN> form and returns it as a <TT>String</TT>.
+    * Transforms the chart into $\LaTeX$ form and returns it as a {@code String}.
     * 
     */
    public abstract String toLatex (double width, double height);
@@ -189,7 +170,6 @@ public abstract class CategoryChart  {
 
    /**
     * Same as in {@link XYChart}.
-    * 
     */
    public void setLatexDocFlag (boolean flag)  {
       latexDocFlag = flag;

@@ -34,14 +34,12 @@ import java.lang.Math;
 
 
 /**
- * Represents an axis of a chart encapsulated by
- * an instance of <TT>XYChart</TT>.
- * <TT>Axis</TT> uses the JFreeChart class <TT>NumberAxis</TT>
- * to store some axis properties.
- * This class represents the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis or the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis of a <TT>XYChart</TT>
- * and, consequently,  is drawn when calling the {@link #toLatex toLatex} method.
- * It provides tools to customize the axis in modifying labels and description.
- * 
+ * Represents an axis of a chart encapsulated by an instance of {@link XYChart}.
+ * {@link Axis} uses the JFreeChart class {@link org.jfree.chart.axis.NumberAxis}
+ * to store some axis properties.  This class represents the $x$-axis or the
+ * $y$-axis of a {@link XYChart} and, consequently,  is drawn when calling the
+ * {@link #toLatex} method.  It provides tools to customize the axis in modifying
+ * labels and description.
  */
 public class Axis  {
    
@@ -78,12 +76,10 @@ public class Axis  {
 
    /**
     * Create a new <TT>Axis</TT> instance from an existing <TT>NumberAxis</TT>
-    *    instance with vertical (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) or horizontal (<SPAN CLASS="MATH"><I>x</I></SPAN>-axis) orientation.
+    * instance with vertical ($y$-axis) or horizontal ($x$-axis) orientation.
     * 
     * @param inAxis NumberAxis instance associated to the new variable.
-    * 
-    *    @param orientation axis direction, horizontal or vertical
-    * 
+    * @param orientation axis direction, horizontal or vertical
     */
    public Axis (NumberAxis inAxis, boolean orientation)  {
       this.axis = inAxis;
@@ -99,10 +95,7 @@ public class Axis  {
 
 
    /**
-    * Returns the <TT>NumberAxis</TT> instance (from JFreeChart) linked with the current variable.
-    * 
-    * @return the <TT>NumberAxis</TT> instance (from JFreeChart) linked with the current variable.
-    * 
+    * @return The <TT>NumberAxis</TT> instance (from JFreeChart) linked with the current variable.
     */
    protected NumberAxis getAxis()  {
       return axis;
@@ -110,10 +103,7 @@ public class Axis  {
 
 
    /**
-    * Returns the axis description.
-    * 
-    * @return the axis description.
-    * 
+    * @return The axis description.
     */
    public String getLabel()  {
       return axis.getLabel();
@@ -124,8 +114,6 @@ public class Axis  {
     * Sets the axis description. This description will be displayed on the chart, near the axis.
     * 
     * @param label axis label.
-    * 
-    * 
     */
    public void setLabel (String label)  {
       axis.setLabel(label);
@@ -137,8 +125,6 @@ public class Axis  {
     * This tick unit replaces the default unit.
     * 
     * @param tick tick unit.
-    * 
-    * 
     */
    public void setLabels (double tick)  {
       axis.setTickUnit(new NumberTickUnit(tick));
@@ -148,7 +134,6 @@ public class Axis  {
 
    /**
     * Calculates and sets an automatic tick unit.
-    * 
     */
    public void setLabelsAuto()  {
       axis.setTickUnit(new NumberTickUnit(computeAutoTickValue()));
@@ -157,8 +142,6 @@ public class Axis  {
 
 
    /**
-    * Not used anymore.
-    * 
     */
    @Deprecated
    public void enableCustomLabels()  {
@@ -167,8 +150,6 @@ public class Axis  {
 
 
    /**
-    * Not used anymore.
-    * 
     */
    @Deprecated
    public void disableCustomLabels()  {
@@ -181,11 +162,9 @@ public class Axis  {
     * containing an increasing sequence of numbers representing the positions at
     *  which labels will appear on the axis. It is designed to export the
     *  axis to a LaTeX source code; it has no effect on the chart appearance
-    *  displayed with <TT>XYChart.view()</TT>.
+    *  displayed with {@link XYChart#view}
     * 
-    * @param position new label positions.
-    * 
-    * 
+    * @param position New label positions.
     */
    public void setLabels (double[] position)  {
       this.labelsName = null;
@@ -202,17 +181,14 @@ public class Axis  {
 
    /**
     * Assigns custom labels to user-defined positions on the axis.
-    *   This method requires an array of positions as well as an array of labels.
-    *   The label <TT>label[i]</TT> will be used at position <TT>position[i]</TT>.
-    *    It is designed to export the axis to a LaTeX source code,
-    *   and to use <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>/TikZ commands to write prettier characters; it has no
-    *   effect on the chart appearance displayed with <TT>XYChart.view()</TT>.
+    * This method requires an array of positions as well as an array of labels.
+    * The label {@code label[i]} will be used at position {@code position[i]}.
+    * It is designed to export the axis to a LaTeX source code, and to use
+    * $\LaTeX$/TikZ commands to write prettier characters; it has no effect on
+    * the chart appearance displayed with {@link XYChart#view}.
     * 
     * @param position label series position on the axis.
-    * 
-    *    @param label label series name on the axis.
-    * 
-    * 
+    * @param label label series name on the axis.
     */
    public void setLabels (double[] position, String[] label)  {
       if (label.length != position.length)
@@ -233,8 +209,7 @@ public class Axis  {
    /**
     * Returns the drawing position parameter (default equals 0).
     * 
-    * @return drawing position parameter.
-    * 
+    * @return The drawing position parameter.
     */
    public double getTwinAxisPosition()  {
       return this.twinAxisPosition;
@@ -242,12 +217,10 @@ public class Axis  {
 
 
    /**
-    * Defines where the opposite axis must be drawn on the current axis,
-    *    where it should appear, and on which label.
+    * Defines where the opposite axis must be drawn on the current axis, where
+    * it should appear, and on which label.
     * 
-    * @param position new drawing position.
-    * 
-    * 
+    * @param position New drawing position.
     */
    public void setTwinAxisPosition (double position)  {
       this.twinAxisPosition = position;
@@ -255,13 +228,11 @@ public class Axis  {
 
 
    /**
-    * Formats and returns a string containing a <SPAN CLASS="logo,LaTeX">L<SUP><SMALL>A</SMALL></SUP>T<SMALL>E</SMALL>X</SPAN>-compatible
-    *    source code which represents this axis and its parameters.
+    * Formats and returns a string containing a $\LaTeX$-compatible source code
+    * which represents this axis and its parameters.
     * 
-    * @return LaTeX source code in a String.
-    *    @param scale current axis wished scale.
-    * 
-    * 
+    * @param scale Desired scale.
+    * @return $\LaTeX$ source code in a String.
     */
    public String toLatex (double scale)  {
       Formatter formatter = new Formatter(Locale.US);

@@ -111,9 +111,9 @@ public class HistogramSeriesCollection extends SSJXYSeriesCollection  {
 
    /**
     * Creates a new <TT>HistogramSeriesCollection</TT> instance with the given data
-    *    series <TT>data</TT>. Bins the elements of data in equally spaced containers
+    *    series {@code data}. Bins the elements of data in equally spaced containers
     *    (the number of bins can be changed using the method {@link #setBins setBins}).
-    *    Only the first <TT>numPoints</TT> of <TT>data</TT> will be taken into account.
+    *    Only the first {@code numPoints} of {@code data} will be taken into account.
     * 
     * @param data Point set
     * 
@@ -268,7 +268,7 @@ public class HistogramSeriesCollection extends SSJXYSeriesCollection  {
 
    /**
     * Adds a data series into the series collection. Only <SPAN  CLASS="textit">the first</SPAN>
-    *   <TT>numPoints</TT> of <TT>data</TT> will be added to the new series.
+    *   {@code numPoints} of {@code data} will be added to the new series.
     * 
     * @param data new series.
     * 

@@ -85,7 +85,7 @@ public class BitMatrix implements Serializable, Cloneable  {
 
    /**
     * Creates a new <TT>BitMatrix</TT> with <TT>r</TT> rows and <TT>c</TT>
-    *   columns using the data in <TT>data</TT>. Note that the orders of the
+    *   columns using the data in {@code data}. Note that the orders of the
     *   bits for the rows are using the same order than for the {@link BitVector}.
     *   This does mean that the first bit is the lowest order bit of the last
     *   <TT>int</TT> in the row and the last bit is the highest order bit of the

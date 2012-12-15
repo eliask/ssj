@@ -37,7 +37,7 @@ import umontreal.iro.lecuyer.probdist.*;
  * <SPAN CLASS="MATH"><I>J</I>&#8764;Poisson(<I>&#955;</I>/2)</SPAN> from a Poisson 
  * distribution, generate a random real 
  * <SPAN CLASS="MATH"><I>X</I>&#8764;<I>&#915;</I>(<I>j</I> + <I>&#957;</I>/2, 1/2)</SPAN> from a 
- * gamma distribution, then return <SPAN CLASS="MATH"><I>X</I></SPAN>. 
+ * gamma distribution, then return $x$. 
  * Here <SPAN CLASS="MATH"><I>&#957;</I></SPAN> is the number of degrees of freedom and 
  * <SPAN CLASS="MATH"><I>&#955;</I></SPAN> is the noncentrality parameter.
  * 

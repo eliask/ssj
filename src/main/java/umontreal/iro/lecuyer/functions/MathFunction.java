@@ -38,7 +38,7 @@ public interface MathFunction {
 
 
    /**
-    * Returns the value of the function evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Returns the value of the function evaluated at $x$.
     * 
     * @param x value at which the distribution function is evaluated
     * 

@@ -41,7 +41,7 @@ public class DataField  {
 
 
    /**
-    * Constructor. Creates a field named <TT>label</TT> of value <TT>data</TT>.
+    * Constructor. Creates a field named <TT>label</TT> of value {@code data}.
     * 
     * @param label name of the field
     * 
@@ -56,15 +56,15 @@ public class DataField  {
 
    
    /**
-    * Constructor. Creates a field named <TT>label</TT> of value <TT>data</TT>.
+    * Constructor. Creates a field named <TT>label</TT> of value {@code data}.
     *  <TT>effectiveLength</TT> is the number of significant elements contained in
-    *  <TT>data</TT> if it is an array.
+    *  {@code data} if it is an array.
     * 
     * @param label name of the field
     * 
     * @param data value of the field
     * 
-    * @param effectiveLength number of significant elements contained in <TT>data</TT>
+    * @param effectiveLength number of significant elements contained in {@code data}
     * 
     */
    public DataField (String label, Object data, int effectiveLength)  {
@@ -138,7 +138,7 @@ public class DataField  {
 
 
    /**
-    * Returns <TT>true</TT> if the field value is an atomic <TT>String</TT>.
+    * Returns <TT>true</TT> if the field value is an atomic {@code String}.
     * 
     */
    public boolean isString()  {
@@ -178,8 +178,8 @@ public class DataField  {
 
 
    /**
-    * Returns the value as <TT>String</TT>, or <TT>null</TT> if it is not
-    *   of type <TT>String</TT>.
+    * Returns the value as {@code String}, or <TT>null</TT> if it is not
+    *   of type {@code String}.
     * See {@link #isString isString}.
     * 
     */
@@ -223,7 +223,7 @@ public class DataField  {
 
 
    /**
-    * Returns the value as one-dimensional <TT>String</TT> array or <TT>null</TT> if it is not of type <TT>String[]</TT>.
+    * Returns the value as one-dimensional {@code String} array or <TT>null</TT> if it is not of type <TT>String[]</TT>.
     * 
     */
    public String[] asStringArray()  {
@@ -263,7 +263,7 @@ public class DataField  {
 
    
    /**
-    * Returns the value as two-dimensional <TT>String</TT> array or <TT>null</TT> if it is not of type <TT>String[][]</TT>.
+    * Returns the value as two-dimensional {@code String} array or <TT>null</TT> if it is not of type <TT>String[][]</TT>.
     * 
     */
    public String[][] asStringArray2D()  {

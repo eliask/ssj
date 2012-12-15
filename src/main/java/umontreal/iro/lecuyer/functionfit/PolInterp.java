@@ -58,9 +58,9 @@ public class PolInterp extends Polynomial implements Serializable {
     *  <TT>(x[0], y[0]), ..., (x[n], y[n])</TT>. This constructs a polynomial of
     *  degree <TT>n</TT> from <TT>n+1</TT> points.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the points.
+    * @param x the $x$ coordinates of the points.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the points.
+    *    @param y the $y$ coordinates of the points.
     * 
     *    @exception NullPointerException if <TT>x</TT> or <TT>y</TT> are <TT>null</TT>.
     * 
@@ -80,9 +80,9 @@ public class PolInterp extends Polynomial implements Serializable {
     *  through the given points <TT>(x[0], y[0]), ..., (x[n], y[n])</TT>. 
     *  This polynomial has degree <TT>n</TT> and there are <TT>n+1</TT> coefficients.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the points.
+    * @param x the $x$ coordinates of the points.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the points.
+    *    @param y the $y$ coordinates of the points.
     * 
     *    @return the coefficients the interpolating polynomial.
     * 
@@ -109,9 +109,9 @@ public class PolInterp extends Polynomial implements Serializable {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the interpolated points.
+    * Returns the $x$ coordinates of the interpolated points.
     * 
-    * @return the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the interpolated points.
+    * @return the $x$ coordinates of the interpolated points.
     * 
     */
    public double[] getX() {
@@ -120,9 +120,9 @@ public class PolInterp extends Polynomial implements Serializable {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the interpolated points.
+    * Returns the $y$ coordinates of the interpolated points.
     * 
-    * @return the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the interpolated points.
+    * @return the $y$ coordinates of the interpolated points.
     * 
     */
    public double[] getY() {
@@ -133,9 +133,9 @@ public class PolInterp extends Polynomial implements Serializable {
    /**
     * Makes a string representation of a set of points.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the points.
+    * @param x the $x$ coordinates of the points.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the points.
+    *    @param y the $y$ coordinates of the points.
     * 
     *    @return the string representing the points.
     * 

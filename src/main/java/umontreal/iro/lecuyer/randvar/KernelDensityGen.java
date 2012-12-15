@@ -56,7 +56,7 @@ import umontreal.iro.lecuyer.rng.RandomStream;
  * and the value of the bandwidth <SPAN CLASS="MATH"><I>h</I></SPAN>.
  * The random variates are then generated as follows:
  * select an observation <SPAN CLASS="MATH"><I>x</I><SUB>I</SUB></SPAN> at random, by inversion, using stream <SPAN CLASS="MATH"><I>s</I></SPAN>,
- * then generate random variate <SPAN CLASS="MATH"><I>Y</I></SPAN> with the generator provided for
+ * then generate random variate $y$ with the generator provided for
  * the density <SPAN CLASS="MATH"><I>k</I></SPAN>, and return <SPAN CLASS="MATH"><I>x</I><SUB>I</SUB> + <I>hY</I></SPAN>.
  * 
  * <P>
@@ -220,7 +220,7 @@ public class KernelDensityGen extends RandomVariateGen {
     *   the generator will produce only positive values, by using 
     *   the <SPAN  CLASS="textit">reflection method</SPAN>: replace all negative values by their
     *   <SPAN  CLASS="textit">absolute values</SPAN>.
-    *   That is, {@link #nextDouble nextDouble} will return <SPAN CLASS="MATH">| <I>x</I>|</SPAN> if <SPAN CLASS="MATH"><I>x</I></SPAN> is the 
+    *   That is, {@link #nextDouble nextDouble} will return <SPAN CLASS="MATH">| <I>x</I>|</SPAN> if $x$ is the 
     *   generated variate.  The mecanism is disabled when the method is
     *   called with <TT>false</TT>.
     * 

@@ -33,7 +33,7 @@ package umontreal.iro.lecuyer.probdistmulti;
  * It specifies the signature of methods for computing the mass function
  * (or probability) 
  * <SPAN CLASS="MATH"><I>p</I>(<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>,&#8230;, <I>x</I><SUB>d</SUB>) = <I>P</I>[<I>X</I><SUB>1</SUB> = <I>x</I><SUB>1</SUB>, <I>X</I><SUB>2</SUB> = <I>x</I><SUB>2</SUB>,&#8230;, <I>X</I><SUB>d</SUB> = <I>x</I><SUB>d</SUB>]</SPAN> and the cumulative probabilities 
- * for a random vector <SPAN CLASS="MATH"><I>X</I></SPAN> with a discrete distribution over the integers.
+ * for a random vector $x$ with a discrete distribution over the integers.
  * 
  */
 public abstract class DiscreteDistributionIntMulti {

@@ -89,9 +89,9 @@ public abstract class XYChart  {
 
 
    /**
-    * Returns the chart's domain axis (<SPAN CLASS="MATH"><I>x</I></SPAN>-axis) object.
+    * Returns the chart's domain axis ($x$-axis) object.
     * 
-    * @return chart's domain axis (<SPAN CLASS="MATH"><I>x</I></SPAN>-axis) object.
+    * @return chart's domain axis ($x$-axis) object.
     * 
     */
    public Axis getXAxis()  {
@@ -100,9 +100,9 @@ public abstract class XYChart  {
 
 
    /**
-    * Returns the chart's range axis (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) object.
+    * Returns the chart's range axis ($y$-axis) object.
     * 
-    * @return chart's range axis (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) object.
+    * @return chart's range axis ($y$-axis) object.
     * 
     */
    public Axis getYAxis()  {
@@ -151,7 +151,7 @@ public abstract class XYChart  {
 
 
    /**
-    * The <SPAN CLASS="MATH"><I>x</I></SPAN> and the <SPAN CLASS="MATH"><I>y</I></SPAN> ranges of the chart are set automatically.
+    * The $x$ and the $y$ ranges of the chart are set automatically.
     * 
     */
    public void setAutoRange()  {
@@ -160,7 +160,7 @@ public abstract class XYChart  {
 
 
    /**
-    * The <SPAN CLASS="MATH"><I>x</I></SPAN> and the <SPAN CLASS="MATH"><I>y</I></SPAN> ranges of the chart are set automatically.
+    * The $x$ and the $y$ ranges of the chart are set automatically.
     *  If <TT>right</TT> is <TT>true</TT>, the vertical axis will be on the left of
     *  the points, otherwise on the right. If <TT>top</TT> is <TT>true</TT>,
     *  the horizontal axis  will be under the points, otherwise above the points.
@@ -253,7 +253,7 @@ public abstract class XYChart  {
    }
 
    /**
-    * The <SPAN CLASS="MATH"><I>x</I></SPAN> and the <SPAN CLASS="MATH"><I>y</I></SPAN> ranges of the chart are set automatically.
+    * The $x$ and the $y$ ranges of the chart are set automatically.
     * If <TT>xZero</TT> is <TT>true</TT>, the vertical axis will pass through the
     * point <SPAN CLASS="MATH">(0, <I>y</I>)</SPAN>. If <TT>yZero</TT> is <TT>true</TT>, the horizontal axis
     * will pass through the point <SPAN CLASS="MATH">(<I>x</I>, 0)</SPAN>.
@@ -270,7 +270,7 @@ public abstract class XYChart  {
 
 
    /**
-    * Sets the <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN> ranges of the chart  using the format: <TT>range =
+    * Sets the $x$ and $y$ ranges of the chart  using the format: <TT>range =
     *   [xmin, xmax, ymin, ymax]</TT>. 
     * @param range new axis ranges.
     * 
@@ -282,7 +282,7 @@ public abstract class XYChart  {
 
 
    /**
-    * Sets the <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN> ranges of the chart  using the format: <TT>range =
+    * Sets the $x$ and $y$ ranges of the chart  using the format: <TT>range =
     *   [xmin, xmax, ymin, ymax]</TT>.
     *   If <TT>right</TT> is <TT>true</TT>, the vertical axis will be on the left of
     *  the points, otherwise on the right. If <TT>top</TT> is <TT>true</TT>,
@@ -332,7 +332,7 @@ public abstract class XYChart  {
    }
 
    /**
-    * Sets the <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN> ranges of the chart using the format: <TT>range =
+    * Sets the $x$ and $y$ ranges of the chart using the format: <TT>range =
     *   [xmin, xmax, ymin, ymax]</TT>.
     *  If <TT>xZero</TT> is <TT>true</TT>, the vertical axis will pass through the
     * point <SPAN CLASS="MATH">(0, <I>y</I>)</SPAN>. If <TT>yZero</TT> is <TT>true</TT>, the horizontal axis
@@ -377,7 +377,7 @@ public abstract class XYChart  {
 
 
    /**
-    * Synchronizes <SPAN CLASS="MATH"><I>x</I></SPAN>-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th series <SPAN CLASS="MATH"><I>x</I></SPAN>-values.
+    * Synchronizes $x$-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th series $x$-values.
     * 
     * @param s series.
     * 

@@ -151,7 +151,7 @@ public class RandomVariateGen  {
 
 
    /**
-    * Returns a <TT>String</TT> containing information about the current generator.
+    * Returns a {@code String} containing information about the current generator.
     * 
     */
    public String toString () {

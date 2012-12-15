@@ -233,7 +233,7 @@ public class InverseFromDensityGen extends RandomVariateGen  {
     * {@link umontreal.iro.lecuyer.probdist.ContinuousDistribution#setXsup setXsup}
     * of <TT>dis</TT>, for better efficiency.
     * Argument <TT>xc</TT> can be the mean,
-    * the mode or any other <SPAN CLASS="MATH"><I>x</I></SPAN> for which the density is relatively large.
+    * the mode or any other $x$ for which the density is relatively large.
     * The <SPAN CLASS="MATH"><I>u</I></SPAN>-resolution <TT>eps</TT> is the desired absolute error in the CDF,
     * and <TT>order</TT> is the degree of the
     * Newton interpolating polynomial over each interval.

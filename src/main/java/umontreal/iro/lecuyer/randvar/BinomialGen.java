@@ -37,7 +37,7 @@ import umontreal.iro.lecuyer.rng.*;
  * <DIV ALIGN="CENTER" CLASS="mathdisplay">
  * <I>p</I>(<I>x</I>) = nCr(<I>n</I>, <I>x</I>)<I>p</I><SUP>x</SUP>(1 - <I>p</I>)<SUP>n-x</SUP> = <I>n</I>!/(<I>x</I>!(<I>n</I> - <I>x</I>)!) &nbsp;<I>p</I><SUP>x</SUP>(1 - <I>p</I>)<SUP>n-x</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for <I>x</I> = 0, 1, 2,..., <I>n</I>
  * </DIV><P></P>
- * where nCr<SPAN CLASS="MATH">(<I>n</I>, <I>x</I>)</SPAN> is the number of combinations of <SPAN CLASS="MATH"><I>x</I></SPAN> objects
+ * where nCr<SPAN CLASS="MATH">(<I>n</I>, <I>x</I>)</SPAN> is the number of combinations of $x$ objects
  * among <SPAN CLASS="MATH"><I>n</I></SPAN>,
  * <SPAN CLASS="MATH"><I>n</I></SPAN> is a positive integer, and 
  * <SPAN CLASS="MATH">0&nbsp;&lt;=&nbsp;<I>p</I>&nbsp;&lt;=&nbsp;1</SPAN>.

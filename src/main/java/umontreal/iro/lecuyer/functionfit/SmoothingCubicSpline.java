@@ -331,9 +331,9 @@ public class SmoothingCubicSpline implements MathFunction,
 
    /**
     * Returns the index of <SPAN CLASS="MATH"><I>P</I></SPAN>, the {@link Polynomial} instance used to evaluate
-    *     <SPAN CLASS="MATH"><I>x</I></SPAN>, in an <TT>ArrayList</TT> table instance returned by
+    *     $x$, in an <TT>ArrayList</TT> table instance returned by
     *   <TT>getSplinePolynomials()</TT>. This index <SPAN CLASS="MATH"><I>k</I></SPAN> gives also the interval in
-    *     table <SPAN  CLASS="textbf">X</SPAN> which contains the value <SPAN CLASS="MATH"><I>x</I></SPAN>
+    *     table <SPAN  CLASS="textbf">X</SPAN> which contains the value $x$
     *    (i.e. such that 
     * <SPAN CLASS="MATH"><I>x</I><SUB>k</SUB> &lt; <I>x</I>&nbsp;&lt;=&nbsp;<I>x</I><SUB>k+1</SUB></SPAN>).
     * 

@@ -37,10 +37,10 @@ public class RootFinder {
 
 
    /**
-    * Computes a root <SPAN CLASS="MATH"><I>x</I></SPAN> of the function in <TT>f</TT> using the
-    *     Brent-Dekker method. The interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> must contain the root <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Computes a root $x$ of the function in <TT>f</TT> using the
+    *     Brent-Dekker method. The interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> must contain the root $x$.
     *     The calculations are done with an approximate relative precision
-    *     <TT>tol</TT>.  Returns <SPAN CLASS="MATH"><I>x</I></SPAN> such that <SPAN CLASS="MATH"><I>f</I> (<I>x</I>) = 0</SPAN>.
+    *     <TT>tol</TT>.  Returns $x$ such that <SPAN CLASS="MATH"><I>f</I> (<I>x</I>) = 0</SPAN>.
     *  
     * @param a left endpoint of initial interval
     * 
@@ -50,7 +50,7 @@ public class RootFinder {
     * 
     *    @param tol accuracy goal
     * 
-    *    @return the root <SPAN CLASS="MATH"><I>x</I></SPAN>
+    *    @return the root $x$
     * 
     */
    public static double brentDekker (double a, double b,
@@ -154,10 +154,10 @@ public class RootFinder {
 
 
    /**
-    * Computes a root <SPAN CLASS="MATH"><I>x</I></SPAN> of the function in <TT>f</TT> using the
-    *     <SPAN  CLASS="textit">bisection</SPAN> method. The interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> must contain the root <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Computes a root $x$ of the function in <TT>f</TT> using the
+    *     <SPAN  CLASS="textit">bisection</SPAN> method. The interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> must contain the root $x$.
     *     The calculations are done with an approximate relative precision
-    *     <TT>tol</TT>.  Returns <SPAN CLASS="MATH"><I>x</I></SPAN> such that <SPAN CLASS="MATH"><I>f</I> (<I>x</I>) = 0</SPAN>.
+    *     <TT>tol</TT>.  Returns $x$ such that <SPAN CLASS="MATH"><I>f</I> (<I>x</I>) = 0</SPAN>.
     *  
     * @param a left endpoint of initial interval
     * 
@@ -167,7 +167,7 @@ public class RootFinder {
     * 
     *    @param tol accuracy goal
     * 
-    *    @return the root <SPAN CLASS="MATH"><I>x</I></SPAN>
+    *    @return the root $x$
     * 
     */
    public static double bisection (double a, double b,

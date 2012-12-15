@@ -105,7 +105,7 @@ public class SubsetOfPointSet extends PointSet  {
 
 
    /**
-    * Selects the <TT>numPoints</TT> points whose numbers are provided in the array
+    * Selects the {@code numPoints} points whose numbers are provided in the array
     *    <TT>pointIndices</TT>.
     *  
     * @param pointIndices array of point indices to be selected

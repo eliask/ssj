@@ -46,13 +46,13 @@ public abstract class SSJXYSeriesCollection  {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>x</I></SPAN>-value at the specified index in the specified series.
+    * Returns the $x$-value at the specified index in the specified series.
     * 
     * @param series required series value.
     * 
     *    @param index value's index.
     * 
-    *    @return <SPAN CLASS="MATH"><I>x</I></SPAN>-value at the specified index in the specified series.
+    *    @return $x$-value at the specified index in the specified series.
     * 
     */
    public double getX (int series, int index)  {
@@ -61,13 +61,13 @@ public abstract class SSJXYSeriesCollection  {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>y</I></SPAN>-value at the specified index in the specified series.
+    * Returns the $y$-value at the specified index in the specified series.
     * 
     * @param series required series value.
     * 
     *    @param index value's index.
     * 
-    *    @return <SPAN CLASS="MATH"><I>y</I></SPAN>-value at the specified index in the specified series.
+    *    @return $y$-value at the specified index in the specified series.
     * 
     */
    public double getY (int series, int index)  {
@@ -87,7 +87,7 @@ public abstract class SSJXYSeriesCollection  {
 
 
    /**
-    * Returns domain (<SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates) min and max values.
+    * Returns domain ($x$-coordinates) min and max values.
     * 
     * @return domain min and max values.
     * 
@@ -111,7 +111,7 @@ public abstract class SSJXYSeriesCollection  {
 
 
    /**
-    * Returns range (<SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates) min and max values.
+    * Returns range ($y$-coordinates) min and max values.
     * 
     * @return range min and max values.
     * 
@@ -135,7 +135,7 @@ public abstract class SSJXYSeriesCollection  {
 
 
    /**
-    * Returns in a <TT>String</TT> all data contained in the current object.
+    * Returns in a {@code String} all data contained in the current object.
     * 
     * @return All data contained in the current object as a {@link String}.
     * 

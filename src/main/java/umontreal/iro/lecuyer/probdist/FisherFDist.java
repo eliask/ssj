@@ -94,7 +94,7 @@ public class FisherFDist extends ContinuousDistribution {
    /**
     * Computes the density function for a Fisher
     * <SPAN CLASS="MATH"><I>F</I></SPAN> distribution with <TT>n1</TT> and <TT>n2</TT> degrees of freedom,
-    *  evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *  evaluated at $x$.
     * 
     * 
     */
@@ -127,7 +127,7 @@ public class FisherFDist extends ContinuousDistribution {
 
    /**
     * Computes the distribution function of the Fisher <SPAN CLASS="MATH"><I>F</I></SPAN> distribution with 
-    * parameters <TT>n1</TT> and <TT>n2</TT>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * parameters <TT>n1</TT> and <TT>n2</TT>, evaluated at $x$.
     * 
     * 
     */
@@ -150,7 +150,7 @@ public class FisherFDist extends ContinuousDistribution {
 
    /**
     * Computes the complementary distribution function of the Fisher <SPAN CLASS="MATH"><I>F</I></SPAN> distribution
-    * with parameters <TT>n1</TT> and <TT>n2</TT>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * with parameters <TT>n1</TT> and <TT>n2</TT>, evaluated at $x$.
     * 
     * 
     */

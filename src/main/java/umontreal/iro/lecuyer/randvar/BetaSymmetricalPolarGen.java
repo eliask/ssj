@@ -57,8 +57,8 @@ public class BetaSymmetricalPolarGen extends BetaSymmetricalGen  {
 
    /**
     * Creates a symmetrical beta random variate generator with
-    *  parameter <SPAN CLASS="MATH"><I>&#945;</I> =</SPAN> <TT>alpha</TT>,  using stream <TT>s1</TT> to generate <SPAN CLASS="MATH"><I>x</I></SPAN>
-    *   and stream <TT>s2</TT> to generate <SPAN CLASS="MATH"><I>y</I></SPAN>, as in above. Restriction: 
+    *  parameter <SPAN CLASS="MATH"><I>&#945;</I> =</SPAN> <TT>alpha</TT>,  using stream <TT>s1</TT> to generate $x$
+    *   and stream <TT>s2</TT> to generate $y$, as in above. Restriction: 
     * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1/2</SPAN>.
     * 
     */
@@ -75,8 +75,8 @@ public class BetaSymmetricalPolarGen extends BetaSymmetricalGen  {
 
    /**
     * Creates a symmetrical beta random variate generator with
-    *  parameter <SPAN CLASS="MATH"><I>&#945;</I> =</SPAN> <TT>alpha</TT>,  using stream <TT>s1</TT> to generate <SPAN CLASS="MATH"><I>x</I></SPAN>
-    *  and <SPAN CLASS="MATH"><I>y</I></SPAN>, as in above.  Restriction: 
+    *  parameter <SPAN CLASS="MATH"><I>&#945;</I> =</SPAN> <TT>alpha</TT>,  using stream <TT>s1</TT> to generate $x$
+    *  and $y$, as in above.  Restriction: 
     * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1/2</SPAN>.
     * 
     */
@@ -87,7 +87,7 @@ public class BetaSymmetricalPolarGen extends BetaSymmetricalGen  {
 
    /**
     * Creates a new generator for the distribution <TT>dist</TT>, using
-    *    stream <TT>s1</TT> to generate <SPAN CLASS="MATH"><I>x</I></SPAN> and stream <TT>s2</TT> to generate <SPAN CLASS="MATH"><I>y</I></SPAN>,
+    *    stream <TT>s1</TT> to generate $x$ and stream <TT>s2</TT> to generate $y$,
     *    as in above.
     *     Restriction: <TT>dist</TT> must have 
     * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1/2</SPAN>.
@@ -120,7 +120,7 @@ public class BetaSymmetricalPolarGen extends BetaSymmetricalGen  {
 
    /**
     * Generates a random number using Ulrich's polar method. Stream
-    *   <TT>s1</TT> generates <SPAN CLASS="MATH"><I>x</I></SPAN> and stream <TT>s2</TT>  generates <SPAN CLASS="MATH"><I>y</I></SPAN>
+    *   <TT>s1</TT> generates $x$ and stream <TT>s2</TT>  generates $y$
     *    [see eq.].
     *   Restriction:  
     * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1/2</SPAN>.

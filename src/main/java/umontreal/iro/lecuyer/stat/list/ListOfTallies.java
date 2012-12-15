@@ -314,7 +314,7 @@ public class ListOfTallies<E extends Tally> extends ListOfStatProbes<E> {
     * Returns the empirical correlation between
     *  the observations in tallies with indices <TT>i</TT> and <TT>j</TT>.
     *  If the tally <TT>i</TT> contains a sample of the random
-    *  variate <SPAN CLASS="MATH"><I>X</I></SPAN> and the tally <TT>j</TT> contains a sample of <SPAN CLASS="MATH"><I>Y</I></SPAN>,
+    *  variate $x$ and the tally <TT>j</TT> contains a sample of $y$,
     *  this corresponds to
     *  
     * <P></P>

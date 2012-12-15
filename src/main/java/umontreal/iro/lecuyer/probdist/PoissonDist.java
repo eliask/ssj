@@ -43,7 +43,7 @@ import umontreal.iro.lecuyer.util.*;
  * <DIV ALIGN="CENTER" CLASS="mathdisplay">
  * <I>F</I>(<I>x</I>) = <I>e</I><SUP>-<I>&#955;</I></SUP>&sum;<SUB>j=0</SUB><SUP>x</SUP> &nbsp;<I>&#955;</I><SUP>j</SUP>/(<I>j</I>!),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for <I>x</I> = 0, 1,....
  * </DIV><P></P>
- * If one has to compute <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN> and/or <SPAN CLASS="MATH"><I>F</I>(<I>x</I>)</SPAN> for several values of <SPAN CLASS="MATH"><I>x</I></SPAN>
+ * If one has to compute <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN> and/or <SPAN CLASS="MATH"><I>F</I>(<I>x</I>)</SPAN> for several values of $x$
  * with the same <SPAN CLASS="MATH"><I>&#955;</I></SPAN>, where <SPAN CLASS="MATH"><I>&#955;</I></SPAN> is not too large, then it is more
  * efficient to instantiate an object and use the non-static methods, since
  * the functions will then be computed once and kept in arrays.

@@ -104,7 +104,7 @@ public class NormalInverseGaussianDist extends ContinuousDistribution {
    /**
     * Computes the density function
     *      for the <SPAN  CLASS="textit">normal inverse gaussian</SPAN> distribution with parameters <SPAN CLASS="MATH"><I>&#945;</I></SPAN>, <SPAN CLASS="MATH"><I>&#946;</I></SPAN>, <SPAN CLASS="MATH"><I>&#956;</I></SPAN>
-    *     and  <SPAN CLASS="MATH"><I>&#948;</I></SPAN>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *     and  <SPAN CLASS="MATH"><I>&#948;</I></SPAN>, evaluated at $x$.
     * 
     */
    public static double density (double alpha, double beta, double mu,
@@ -134,7 +134,7 @@ public class NormalInverseGaussianDist extends ContinuousDistribution {
     * NOT IMPLEMENTED.
     *    Computes the distribution function
     *    of the <SPAN  CLASS="textit">normal inverse gaussian</SPAN> distribution with parameters <SPAN CLASS="MATH"><I>&#945;</I></SPAN>,
-    *   <SPAN CLASS="MATH"><I>&#946;</I></SPAN>, <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#948;</I></SPAN>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *   <SPAN CLASS="MATH"><I>&#946;</I></SPAN>, <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#948;</I></SPAN>, evaluated at $x$.
     * 
     */
    public static double cdf (double alpha, double beta, double mu,
@@ -162,7 +162,7 @@ public class NormalInverseGaussianDist extends ContinuousDistribution {
    /**
     * NOT IMPLEMENTED.
     *  Computes the complementary distribution function of the <SPAN  CLASS="textit">normal inverse gaussian</SPAN> distribution
-    *  with parameters <SPAN CLASS="MATH"><I>&#945;</I></SPAN>, <SPAN CLASS="MATH"><I>&#946;</I></SPAN>, <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#948;</I></SPAN>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *  with parameters <SPAN CLASS="MATH"><I>&#945;</I></SPAN>, <SPAN CLASS="MATH"><I>&#946;</I></SPAN>, <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#948;</I></SPAN>, evaluated at $x$.
     * 
     */
    public static double barF (double alpha, double beta, double mu,

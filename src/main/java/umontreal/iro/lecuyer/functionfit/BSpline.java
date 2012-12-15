@@ -116,9 +116,9 @@ MathFunctionWithIntegral, MathFunctionWithDerivative, MathFunctionWithFirstDeriv
     *    The knots of the resulting B-spline are set uniformly from
     *     <TT>x[0]</TT> to <TT>x[n-1]</TT>.
     * 
-    * @param x the values of <SPAN CLASS="MATH"><I>X</I></SPAN>.
+    * @param x the values of $x$.
     * 
-    *    @param y the values of <SPAN CLASS="MATH"><I>Y</I></SPAN>.
+    *    @param y the values of $y$.
     * 
     *    @param degree the degree of the B-spline.
     * 
@@ -139,9 +139,9 @@ MathFunctionWithIntegral, MathFunctionWithDerivative, MathFunctionWithFirstDeriv
     *    with control points at (<TT>x[i]</TT>, <TT>y[i]</TT>), and
     *    knot vector given by the array <TT>knots</TT>.
     * 
-    * @param x the values of <SPAN CLASS="MATH"><I>X</I></SPAN>.
+    * @param x the values of $x$.
     * 
-    *    @param y the values of <SPAN CLASS="MATH"><I>Y</I></SPAN>.
+    *    @param y the values of $y$.
     * 
     *    @param knots the knots of the B-spline.
     * 
@@ -224,9 +224,9 @@ MathFunctionWithIntegral, MathFunctionWithDerivative, MathFunctionWithFirstDeriv
     *    as described in <TT><A NAME="tex2html1"
     *   HREF="http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/">http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/</A></TT>.
     *    
-    * @param x the values of <SPAN CLASS="MATH"><I>X</I></SPAN>.
+    * @param x the values of $x$.
     * 
-    *    @param y the values of <SPAN CLASS="MATH"><I>Y</I></SPAN>.
+    *    @param y the values of $y$.
     * 
     *    @param degree the degree of the B-spline.
     * 
@@ -302,9 +302,9 @@ MathFunctionWithIntegral, MathFunctionWithDerivative, MathFunctionWithFirstDeriv
     *    as described in <TT><A NAME="tex2html2"
     *   HREF="http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/">http://www.cs.mtu.edu/~shene/COURSES/cs3621/NOTES/</A></TT>.
     * 
-    * @param x the values of <SPAN CLASS="MATH"><I>X</I></SPAN>.
+    * @param x the values of $x$.
     * 
-    *    @param y the values of <SPAN CLASS="MATH"><I>Y</I></SPAN>.
+    *    @param y the values of $y$.
     * 
     *    @param degree the degree of the B-spline.
     * 

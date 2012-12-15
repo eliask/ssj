@@ -52,7 +52,7 @@ import umontreal.iro.lecuyer.util.*;
  * <DIV ALIGN="CENTER" CLASS="mathdisplay">
  * <I>F</I><SUP>-1</SUP>(<I>u</I>) = <I>e</I><SUP><I>&#956;</I>+<I>&#963;&#934;</I><SUP>-1</SUP>(u)</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for 0&nbsp;&lt;=&nbsp;<I>u</I> &lt; 1.
  * </DIV><P></P>
- * If <SPAN CLASS="MATH">ln(<I>Y</I>)</SPAN> has a <EM>normal</EM> distribution, then <SPAN CLASS="MATH"><I>Y</I></SPAN> has a
+ * If <SPAN CLASS="MATH">ln(<I>Y</I>)</SPAN> has a <EM>normal</EM> distribution, then $y$ has a
  * <EM>lognormal</EM> distribution with the same parameters.
  * 
  * <P>

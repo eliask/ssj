@@ -212,14 +212,14 @@ public class GofFormat {
    /**
     * Formats data to plot the graph of the distribution function <SPAN CLASS="MATH"><I>F</I></SPAN> over the
     *   interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN>, and returns the result as a {@link String}.
-    *   The method <TT>dist.cdf(x)</TT> returns the value of <SPAN CLASS="MATH"><I>F</I></SPAN> at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *   The method <TT>dist.cdf(x)</TT> returns the value of <SPAN CLASS="MATH"><I>F</I></SPAN> at $x$.
     * The {@link String} <TT>desc</TT> gives a short caption for the graphic plot.
     *   The method computes the <SPAN CLASS="MATH"><I>m</I> + 1</SPAN> points 
     * <SPAN CLASS="MATH">(<I>x</I><SUB>i</SUB>,&nbsp;<I>F</I>(<I>x</I><SUB>i</SUB>))</SPAN>,
     *   where 
     * <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB> = <I>a</I> + <I>i</I>(<I>b</I> - <I>a</I>)/<I>m</I></SPAN> for 
     * <SPAN CLASS="MATH"><I>i</I> = 0, 1,&#8230;, <I>m</I></SPAN>, and formats these points
-    *   into a <TT>String</TT> in a format suitable for the
+    *   into a {@code String} in a format suitable for the
     *   software specified by {@link #graphSoft graphSoft}.
     *   NOTE: see also the more recent class
     *   {@link umontreal.iro.lecuyer.charts.ContinuousDistChart ContinuousDistChart}.
@@ -246,14 +246,14 @@ public class GofFormat {
    /**
     * Formats data to plot the graph of the density <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN> over the interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN>,
     *   and returns the result as a {@link String}. The method
-    *   <TT>dist.density(x)</TT> returns the value of <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN> at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *   <TT>dist.density(x)</TT> returns the value of <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN> at $x$.
     *   The {@link String} <TT>desc</TT> gives a short caption for the graphic
     *   plot. The method computes the <SPAN CLASS="MATH"><I>m</I> + 1</SPAN> points 
     * <SPAN CLASS="MATH">(<I>x</I><SUB>i</SUB>,&nbsp;<I>f</I> (<I>x</I><SUB>i</SUB>))</SPAN>,
     *   where 
     * <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB> = <I>a</I> + <I>i</I>(<I>b</I> - <I>a</I>)/<I>m</I></SPAN> for 
     * <SPAN CLASS="MATH"><I>i</I> = 0, 1,&#8230;, <I>m</I></SPAN>, and formats these points
-    *   into a <TT>String</TT> in a format suitable for the
+    *   into a {@code String} in a format suitable for the
     *   software specified by {@link #graphSoft graphSoft}.
     *   NOTE: see also the more recent class
     *   {@link umontreal.iro.lecuyer.charts.ContinuousDistChart ContinuousDistChart}.
@@ -578,7 +578,7 @@ public class GofFormat {
 
    /**
     * Computes the KS test statistics to compare the
-    *  empirical distribution of the observations in <TT>data</TT>
+    *  empirical distribution of the observations in {@code data}
     *  with the theoretical distribution <TT>dist</TT> and
     *  formats the results.
     * 
@@ -842,7 +842,7 @@ public class GofFormat {
 
 
    /**
-    * The observations <SPAN CLASS="MATH"><I>V</I></SPAN> are in <TT>data</TT>,
+    * The observations <SPAN CLASS="MATH"><I>V</I></SPAN> are in {@code data},
     *   not necessarily sorted, and their empirical
     *   distribution is compared with the continuous distribution <TT>dist</TT>.
     *  
@@ -945,7 +945,7 @@ public class GofFormat {
 
 
    /**
-    * The observations are in <TT>data</TT>,
+    * The observations are in {@code data},
     *  not necessarily sorted, and we want to compare their empirical
     *  distribution with the distribution <TT>dist</TT>.
     *  If <SPAN CLASS="MATH"><I>N</I> = 1</SPAN>, only puts <TT>data.get(0)</TT> in <TT>sVal[MEAN]</TT>,

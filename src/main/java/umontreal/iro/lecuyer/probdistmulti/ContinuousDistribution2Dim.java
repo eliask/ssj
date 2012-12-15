@@ -71,9 +71,9 @@ public abstract class ContinuousDistribution2Dim
    /**
     * Returns <SPAN CLASS="MATH"><I>f</I> (<I>x</I>, <I>y</I>)</SPAN>, the density of <SPAN CLASS="MATH">(<I>X</I>, <I>Y</I>)</SPAN> evaluated at <SPAN CLASS="MATH">(<I>x</I>, <I>y</I>)</SPAN>.
     * 
-    * @param x value <SPAN CLASS="MATH"><I>x</I></SPAN> at which the density is evaluated
+    * @param x value $x$ at which the density is evaluated
     * 
-    *    @param y value <SPAN CLASS="MATH"><I>y</I></SPAN> at which the density is evaluated
+    *    @param y value $y$ at which the density is evaluated
     * 
     *    @return density function evaluated at <SPAN CLASS="MATH">(<I>x</I>, <I>y</I>)</SPAN>
     * 
@@ -109,9 +109,9 @@ public abstract class ContinuousDistribution2Dim
     * <I>F</I>(<I>x</I>, <I>y</I>) = <I>P</I>[<I>X</I>&nbsp;&lt;=&nbsp;<I>x</I>, <I>Y</I>&nbsp;&lt;=&nbsp;<I>y</I>] = &int;<SUB>-&#8734;</SUB><SUP>x</SUP><I>ds</I>&int;<SUB>-&#8734;</SUB><SUP>y</SUP><I>dt</I>&nbsp;<I>f</I> (<I>s</I>, <I>t</I>).
     * </DIV><P></P>
     *  
-    *  @param x value <SPAN CLASS="MATH"><I>x</I></SPAN> at which the distribution function is evaluated
+    *  @param x value $x$ at which the distribution function is evaluated
     * 
-    *     @param y value <SPAN CLASS="MATH"><I>y</I></SPAN> at which the distribution function is evaluated
+    *     @param y value $y$ at which the distribution function is evaluated
     * 
     *     @return distribution function evaluated at  <SPAN CLASS="MATH">(<I>x</I>, <I>y</I>)</SPAN>
     *  
@@ -130,9 +130,9 @@ public abstract class ContinuousDistribution2Dim
     * bar(F)(<I>x</I>, <I>y</I>) = <I>P</I>[<I>X</I>&nbsp;&gt;=&nbsp;<I>x</I>, <I>Y</I>&nbsp;&gt;=&nbsp;<I>y</I>] = &int;<SUP>&#8734;</SUP><SUB>x</SUB><I>ds</I>&int;<SUP>&#8734;</SUP><SUB>y</SUB><I>dt</I>&nbsp;<I>f</I> (<I>s</I>, <I>t</I>).
     * </DIV><P></P>
     * 
-    * @param x value <SPAN CLASS="MATH"><I>x</I></SPAN> at which the upper distribution is evaluated
+    * @param x value $x$ at which the upper distribution is evaluated
     * 
-    *    @param y value <SPAN CLASS="MATH"><I>y</I></SPAN> at which the upper distribution is evaluated
+    *    @param y value $y$ at which the upper distribution is evaluated
     * 
     *    @return upper distribution function evaluated at  <SPAN CLASS="MATH">(<I>x</I>, <I>y</I>)</SPAN>
     * 
@@ -155,13 +155,13 @@ public abstract class ContinuousDistribution2Dim
     * <I>P</I>[<I>a</I><SUB>1</SUB>&nbsp;&lt;=&nbsp;<I>X</I>&nbsp;&lt;=&nbsp;<I>b</I><SUB>1</SUB>,&nbsp;<I>a</I><SUB>2</SUB>&nbsp;&lt;=&nbsp;<I>Y</I>&nbsp;&lt;=&nbsp;<I>b</I><SUB>2</SUB>] = &int;<SUB>a<SUB>1</SUB></SUB><SUP>b<SUB>1</SUB></SUP><I>dx</I>&int;<SUB>a<SUB>2</SUB></SUB><SUP>b<SUB>2</SUB></SUP><I>dy</I>&nbsp;<I>f</I> (<I>x</I>, <I>y</I>).
     * </DIV><P></P> 
     *  
-    * @param a1 <SPAN CLASS="MATH"><I>x</I></SPAN> lower limit of the square
+    * @param a1 $x$ lower limit of the square
     * 
-    *    @param a2 <SPAN CLASS="MATH"><I>y</I></SPAN> lower limit of the square
+    *    @param a2 $y$ lower limit of the square
     * 
-    *    @param b1 <SPAN CLASS="MATH"><I>x</I></SPAN> upper limit of the square
+    *    @param b1 $x$ upper limit of the square
     * 
-    *    @param b2 <SPAN CLASS="MATH"><I>y</I></SPAN> upper limit of the square
+    *    @param b2 $y$ upper limit of the square
     * 
     *    @return the cumulative probability in the square region
     * 

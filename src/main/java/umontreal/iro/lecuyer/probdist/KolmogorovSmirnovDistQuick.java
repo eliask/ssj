@@ -427,7 +427,7 @@ public class KolmogorovSmirnovDistQuick extends KolmogorovSmirnovDist  {
     * <SPAN CLASS="MATH">500 &lt; <I>n</I>&nbsp;&lt;=&nbsp;200000</SPAN>,
     * and a few correct decimal digits (1 to 5) for 
     * <SPAN CLASS="MATH"><I>n</I> &gt; 200000</SPAN>.
-    * This method is much faster and more precise for <SPAN CLASS="MATH"><I>x</I></SPAN> close to 1, than
+    * This method is much faster and more precise for $x$ close to 1, than
     *  method <TT>barF</TT> of
     * {@link KolmogorovSmirnovDist} for moderate or large <SPAN CLASS="MATH"><I>n</I></SPAN>.
     *  Restriction:  <SPAN CLASS="MATH"><I>n</I>&nbsp;&gt;=&nbsp;1</SPAN>.

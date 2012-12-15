@@ -33,11 +33,11 @@ import java.util.Locale;
 /**
  * This class implements discrete distributions over a <SPAN  CLASS="textit">finite set of real numbers</SPAN>
  * (also over <SPAN  CLASS="textit">integers</SPAN> as a particular case).
- * We assume that the random variable <SPAN CLASS="MATH"><I>X</I></SPAN> of interest can take one of the
+ * We assume that the random variable $x$ of interest can take one of the
  * <SPAN CLASS="MATH"><I>n</I></SPAN> values 
  * <SPAN CLASS="MATH"><I>x</I><SUB>0</SUB> &lt; <SUP> ... </SUP> &lt; <I>x</I><SUB>n-1</SUB></SPAN>, which  <SPAN  CLASS="textit">must be sorted</SPAN> by
  * increasing order.
- * <SPAN CLASS="MATH"><I>X</I></SPAN> can take the value <SPAN CLASS="MATH"><I>x</I><SUB>k</SUB></SPAN> with probability 
+ * $x$ can take the value <SPAN CLASS="MATH"><I>x</I><SUB>k</SUB></SPAN> with probability 
  * <SPAN CLASS="MATH"><I>p</I><SUB>k</SUB> = <I>P</I>[<I>X</I> = <I>x</I><SUB>k</SUB>]</SPAN>.
  * In addition to the methods specified in the interface
  * {@link umontreal.iro.lecuyer.probdist.Distribution Distribution},
@@ -356,7 +356,7 @@ public class DiscreteDistribution implements Distribution {
    /**
     * Returns the lower limit <SPAN CLASS="MATH"><I>x</I><SUB>0</SUB></SPAN> of the support of the distribution.
     * 
-    * @return <SPAN CLASS="MATH"><I>x</I></SPAN> lower limit of support
+    * @return $x$ lower limit of support
     * 
     */
    public double getXinf() {
@@ -367,7 +367,7 @@ public class DiscreteDistribution implements Distribution {
    /**
     * Returns the upper limit <SPAN CLASS="MATH"><I>x</I><SUB>n-1</SUB></SPAN> of the support of the distribution.
     * 
-    * @return <SPAN CLASS="MATH"><I>x</I></SPAN> upper limit of support
+    * @return $x$ upper limit of support
     * 
     */
    public double getXsup() {
@@ -376,7 +376,7 @@ public class DiscreteDistribution implements Distribution {
 
 
    /**
-    * Returns a <TT>String</TT> containing information about the current distribution.
+    * Returns a {@code String} containing information about the current distribution.
     * 
     */
    public String toString() {

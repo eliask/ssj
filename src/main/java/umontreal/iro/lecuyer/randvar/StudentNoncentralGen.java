@@ -32,9 +32,9 @@ import umontreal.iro.lecuyer.probdist.*;
 /**
  * This class implements random variate generators for the 
  * <SPAN  CLASS="textit">noncentral Student-t</SPAN> distribution with <SPAN CLASS="MATH"><I>n</I> &gt; 0</SPAN> degrees of freedom and
- * noncentrality parameter <SPAN CLASS="MATH"><I>&#948;</I></SPAN>. If <SPAN CLASS="MATH"><I>X</I></SPAN> is distributed according to a 
- * normal distribution with mean  <SPAN CLASS="MATH"><I>&#948;</I></SPAN> and variance 1, and <SPAN CLASS="MATH"><I>Y</I></SPAN> (statistically
- * independent of <SPAN CLASS="MATH"><I>X</I></SPAN>) is distributed according to a chi-square distribution 
+ * noncentrality parameter <SPAN CLASS="MATH"><I>&#948;</I></SPAN>. If $x$ is distributed according to a 
+ * normal distribution with mean  <SPAN CLASS="MATH"><I>&#948;</I></SPAN> and variance 1, and $y$ (statistically
+ * independent of $x$) is distributed according to a chi-square distribution 
  * with <SPAN CLASS="MATH"><I>n</I></SPAN> degrees of freedom, then
  * 
  * <P></P>

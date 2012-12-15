@@ -115,7 +115,7 @@ public class DMatrix  {
 
    /**
     * Creates a new <TT>DMatrix</TT> with <TT>r</TT> rows and
-    *  <TT>c</TT> columns using the data in <TT>data</TT>.
+    *  <TT>c</TT> columns using the data in {@code data}.
     * 
     * @param data the data of the new <TT>DMatrix</TT>
     * 
@@ -255,8 +255,8 @@ public class DMatrix  {
 
 
    /**
-    * Solve the triangular matrix equation <SPAN CLASS="MATH"><I>UX</I> = <I>B</I></SPAN> for <SPAN CLASS="MATH"><I>X</I></SPAN>.
-    *  <SPAN CLASS="MATH"><I>U</I></SPAN> is a square upper triangular matrix. <SPAN CLASS="MATH"><I>B</I></SPAN> and <SPAN CLASS="MATH"><I>X</I></SPAN> must have the same
+    * Solve the triangular matrix equation <SPAN CLASS="MATH"><I>UX</I> = <I>B</I></SPAN> for $x$.
+    *  <SPAN CLASS="MATH"><I>U</I></SPAN> is a square upper triangular matrix. <SPAN CLASS="MATH"><I>B</I></SPAN> and $x$ must have the same
     * number of columns.
     * 
     * @param U input matrix

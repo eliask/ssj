@@ -291,7 +291,7 @@ public class ClassFinder implements Cloneable, java.io.Serializable {
     *  can be used when the imports contained
     *  in this class finder are used.
     *  For example, if <TT>java.lang.String.class</TT> is given
-    *  to this method, <TT>String</TT> is returned if
+    *  to this method, {@code String} is returned if
     *  <TT>java.lang.*</TT> is among the import declarations.
     * 
     * <P>

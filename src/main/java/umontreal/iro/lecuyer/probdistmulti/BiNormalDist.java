@@ -41,7 +41,7 @@ import umontreal.iro.lecuyer.probdist.NormalDistQuick;
  * <SPAN CLASS="MATH">[<I>Y</I>] = <I>&#963;</I><SUB>2</SUB><SUP>2</SUP></SPAN> such that 
  * <SPAN CLASS="MATH"><I>&#963;</I><SUB>1</SUB> &gt; 0</SPAN> and 
  * <SPAN CLASS="MATH"><I>&#963;</I><SUB>2</SUB> &gt; 0</SPAN>. 
- *  The correlation between <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>Y</I></SPAN> is <SPAN CLASS="MATH"><I>r</I></SPAN>.
+ *  The correlation between $x$ and $y$ is <SPAN CLASS="MATH"><I>r</I></SPAN>.
  * Its density function is 
  * 
  * <P></P>

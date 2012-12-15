@@ -132,7 +132,7 @@ public class CIRProcessEuler extends StochasticProcess  {
 
    /**
     * Generates an observation of the process in <TT>dt</TT> time units,
-    * assuming that the process has value <SPAN CLASS="MATH"><I>x</I></SPAN> at the current time.
+    * assuming that the process has value $x$ at the current time.
     * Uses the process parameters specified in the constructor.
     * Note that this method does not affect the sample path of the process
     * stored internally (if any).

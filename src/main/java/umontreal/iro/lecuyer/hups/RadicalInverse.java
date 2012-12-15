@@ -236,7 +236,7 @@ public class RadicalInverse  {
 
    /**
     * Initializes the  base of this object  to <SPAN CLASS="MATH"><I>b</I></SPAN>
-    *   and its first value of <SPAN CLASS="MATH"><I>x</I></SPAN> to <TT>x0</TT>.
+    *   and its first value of $x$ to <TT>x0</TT>.
     * 
     * @param b Base
     * 
@@ -336,8 +336,8 @@ public class RadicalInverse  {
  
 
    /**
-    * Computes the radical inverse of <SPAN CLASS="MATH"><I>x</I></SPAN> in base <SPAN CLASS="MATH"><I>b</I></SPAN>.
-    * If <SPAN CLASS="MATH"><I>x</I></SPAN> has more decimals in base <SPAN CLASS="MATH"><I>b</I></SPAN> than <SPAN CLASS="MATH">log<SUB>b</SUB></SPAN>(<TT>Long.MAX_VALUE</TT>),
+    * Computes the radical inverse of $x$ in base <SPAN CLASS="MATH"><I>b</I></SPAN>.
+    * If $x$ has more decimals in base <SPAN CLASS="MATH"><I>b</I></SPAN> than <SPAN CLASS="MATH">log<SUB>b</SUB></SPAN>(<TT>Long.MAX_VALUE</TT>),
     * it is truncated to its minimum precision in base <SPAN CLASS="MATH"><I>b</I></SPAN>.
     *    If 
     * <SPAN CLASS="MATH"><I>x</I> = &sum;<SUB>r=0</SUB><SUP>k-1</SUP><I>a</I><SUB>r</SUB><I>b</I><SUP>-r-1</SUP></SPAN>, the method computes and returns
@@ -370,8 +370,8 @@ public class RadicalInverse  {
  
 
    /**
-    * Computes the radical inverse of <SPAN CLASS="MATH"><I>x</I></SPAN> in base <SPAN CLASS="MATH"><I>b</I></SPAN>.
-    * If <SPAN CLASS="MATH"><I>x</I></SPAN> has more decimals in base <SPAN CLASS="MATH"><I>b</I></SPAN> than <SPAN CLASS="MATH">log<SUB>b</SUB></SPAN>(<TT>Long.MAX_VALUE</TT>),
+    * Computes the radical inverse of $x$ in base <SPAN CLASS="MATH"><I>b</I></SPAN>.
+    * If $x$ has more decimals in base <SPAN CLASS="MATH"><I>b</I></SPAN> than <SPAN CLASS="MATH">log<SUB>b</SUB></SPAN>(<TT>Long.MAX_VALUE</TT>),
     * it is truncated to its minimum precision in base <SPAN CLASS="MATH"><I>b</I></SPAN>.
     *    If 
     * <SPAN CLASS="MATH"><I>x</I> = &sum;<SUB>r=0</SUB><SUP>k-1</SUP><I>a</I><SUB>r</SUB><I>b</I><SUP>-r-1</SUP></SPAN>, the method computes and returns
@@ -408,7 +408,7 @@ public class RadicalInverse  {
     *    in base <SPAN CLASS="MATH"><I>b</I></SPAN> from <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> = <TT>x</TT> = <SPAN CLASS="MATH"><I>&#968;</I><SUB>b</SUB>(<I>i</I>)</SPAN>,  using addition with <EM>rigthward carry</EM>.
     *    The parameter <TT>invb</TT> is equal to <SPAN CLASS="MATH">1/<I>b</I></SPAN>.
     *    Using long incremental streams (i.e., calling this method several times
-    *    in a row) cause increasing inaccuracy in <SPAN CLASS="MATH"><I>x</I></SPAN>. Thus the user should
+    *    in a row) cause increasing inaccuracy in $x$. Thus the user should
     *    recompute the radical inverse directly by calling
     *    {@link #radicalInverse radicalInverse} every once in a while (i.e. in every few
     *    thousand  calls).
@@ -448,7 +448,7 @@ public class RadicalInverse  {
     *    using addition with <EM>rigthward carry</EM> as described in
     *  Wang and Hickernell.
     *    Since using long incremental streams (i.e., calling this method several
-    *    times in a row) cause increasing inaccuracy in <SPAN CLASS="MATH"><I>x</I></SPAN>, the method
+    *    times in a row) cause increasing inaccuracy in $x$, the method
     *    recomputes the radical inverse directly from <SPAN CLASS="MATH"><I>i</I></SPAN> by calling
     *    {@link #radicalInverse radicalInverse} once in every 1000 calls.
     *  

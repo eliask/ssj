@@ -40,12 +40,12 @@ public class PiecewiseConstantFunction implements MathFunction {
 
    /**
     * Constructs a new piecewise-constant function
-    *  with <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>Y</I></SPAN> coordinates given
+    *  with $x$ and $y$ coordinates given
     *  by <TT>x</TT> and <TT>y</TT>.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>X</I></SPAN> coordinates.
+    * @param x the $x$ coordinates.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>Y</I></SPAN> coordinates.
+    *    @param y the $y$ coordinates.
     * 
     * 
     */
@@ -58,9 +58,9 @@ public class PiecewiseConstantFunction implements MathFunction {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>X</I></SPAN> coordinates of the function.
+    * Returns the $x$ coordinates of the function.
     * 
-    * @return the <SPAN CLASS="MATH"><I>X</I></SPAN> coordinates of the function.
+    * @return the $x$ coordinates of the function.
     * 
     */
    public double[] getX() {
@@ -69,10 +69,10 @@ public class PiecewiseConstantFunction implements MathFunction {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>Y</I></SPAN> coordinates of
+    * Returns the $y$ coordinates of
     *  the function.
     * 
-    * @return the <SPAN CLASS="MATH"><I>Y</I></SPAN> coordinates of the function.
+    * @return the $y$ coordinates of the function.
     * 
     */
    public double[] getY() {

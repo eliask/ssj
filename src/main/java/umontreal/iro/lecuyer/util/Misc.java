@@ -208,9 +208,9 @@ public class Misc {
     * 
     * @param n degree of the interpolating polynomial
     * 
-    *    @param X <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates of points
+    *    @param X $x$-coordinates of points
     * 
-    *    @param Y <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of points
+    *    @param Y $y$-coordinates of points
     * 
     *    @param C Coefficients of the interpolating polynomial
     * 
@@ -232,14 +232,14 @@ public class Misc {
 
 
    /**
-    * Given <SPAN CLASS="MATH"><I>n</I></SPAN>, <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>C</I></SPAN> as described in
+    * Given <SPAN CLASS="MATH"><I>n</I></SPAN>, $x$ and <SPAN CLASS="MATH"><I>C</I></SPAN> as described in
     *  {@link #interpol(int,double[],double[],double[]) interpol}<TT>(n, X, Y, C)</TT>, this
     * function returns the value of the interpolating polynomial <SPAN CLASS="MATH"><I>P</I>(<I>z</I>)</SPAN> evaluated
     *  at <SPAN CLASS="MATH"><I>z</I></SPAN> (see eq. ).
     * 
     * @param n degree of the interpolating polynomial
     * 
-    *    @param X <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates of points
+    *    @param X $x$-coordinates of points
     * 
     *    @param C Coefficients of the interpolating polynomial
     * 
@@ -265,7 +265,7 @@ public class Misc {
     * <DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="eq.horner"></A>
     * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<I>P</I>(<I>x</I>) = <I>c</I><SUB>0</SUB> + <I>c</I><SUB>1</SUB><I>x</I> + <I>c</I><SUB>2</SUB><I>x</I><SUP>2</SUP> + <SUP> ... </SUP> + <I>c</I><SUB>n</SUB><I>x</I><SUP>n</SUP>
     * </DIV><P></P>
-    * of degree <SPAN CLASS="MATH"><I>n</I></SPAN> with coefficients <SPAN CLASS="MATH"><I>c</I><SUB>j</SUB> =</SPAN> <TT>C[j]</TT> at <SPAN CLASS="MATH"><I>x</I></SPAN>. 
+    * of degree <SPAN CLASS="MATH"><I>n</I></SPAN> with coefficients <SPAN CLASS="MATH"><I>c</I><SUB>j</SUB> =</SPAN> <TT>C[j]</TT> at $x$. 
     * 
     * @param C Coefficients of the polynomial
     * 

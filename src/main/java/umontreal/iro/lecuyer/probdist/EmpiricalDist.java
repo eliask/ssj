@@ -314,7 +314,7 @@ public class EmpiricalDist extends DiscreteDistribution {
 
 
    /**
-    * Returns a <TT>String</TT> containing information about the current distribution.
+    * Returns a {@code String} containing information about the current distribution.
     * 
     */
    public String toString () {

@@ -42,7 +42,7 @@ import umontreal.iro.lecuyer.probdist.*;
  * <P>
  * The (non-static) <TT>nextDouble</TT> method simply calls <TT>inverseF</TT> on the
  * lognormal distribution object.
- * One can also generate a lognormal random variate <SPAN CLASS="MATH"><I>X</I></SPAN> via 
+ * One can also generate a lognormal random variate $x$ via 
  * 
  * <P></P>
  * <DIV ALIGN="CENTER" CLASS="mathdisplay">

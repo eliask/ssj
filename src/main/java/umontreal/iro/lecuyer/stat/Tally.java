@@ -209,10 +209,10 @@ public class Tally extends StatProbe implements Cloneable {
     * Computes a confidence interval on the mean.
     *   Returns, in elements 0 and 1 of the array
     *   object <TT>centerAndRadius[]</TT>, the center and half-length (radius)
-    *   of a confidence interval on the true mean of the random variable <SPAN CLASS="MATH"><I>X</I></SPAN>,
+    *   of a confidence interval on the true mean of the random variable $x$,
     *   with confidence level <TT>level</TT>, assuming that the <SPAN CLASS="MATH"><I>n</I></SPAN> observations
     *   given to this collector are independent and identically distributed
-    *   (i.i.d.) copies of <SPAN CLASS="MATH"><I>X</I></SPAN>, and that <SPAN CLASS="MATH"><I>n</I></SPAN> is large enough for the central limit
+    *   (i.i.d.) copies of $x$, and that <SPAN CLASS="MATH"><I>n</I></SPAN> is large enough for the central limit
     *   theorem to hold.  This confidence interval is computed based on the statistic
     *   
     * <P></P>
@@ -224,7 +224,7 @@ public class Tally extends StatProbe implements Cloneable {
     * <SPAN CLASS="MATH">bar(X)<SUB>n</SUB> =</SPAN> <TT>average()</TT> is the average of these
     *   observations, <SPAN CLASS="MATH"><I>S</I><SUB>n, x</SUB> =</SPAN> <TT>standardDeviation()</TT> is the empirical
     *   standard  deviation.  Under the assumption that the observations
-    *   of <SPAN CLASS="MATH"><I>X</I></SPAN> are  i.i.d. and <SPAN CLASS="MATH"><I>n</I></SPAN> is large,
+    *   of $x$ are  i.i.d. and <SPAN CLASS="MATH"><I>n</I></SPAN> is large,
     *   <SPAN CLASS="MATH"><I>Z</I></SPAN> has the standard normal distribution.
     *   The confidence interval given by this method is valid <SPAN  CLASS="textit">only if</SPAN>
     *   this assumption is approximately verified.
@@ -254,10 +254,10 @@ public class Tally extends StatProbe implements Cloneable {
     * Computes a confidence interval on the mean.
     *   Returns, in elements 0 and 1 of the array
     *   object <TT>centerAndRadius[]</TT>, the center and half-length (radius)
-    *   of a confidence interval on the true mean of the random variable <SPAN CLASS="MATH"><I>X</I></SPAN>,
+    *   of a confidence interval on the true mean of the random variable $x$,
     *   with confidence level <TT>level</TT>, assuming that the observations
     *   given to this collector are independent and identically distributed
-    *   (i.i.d.) copies of <SPAN CLASS="MATH"><I>X</I></SPAN>, and that <SPAN CLASS="MATH"><I>X</I></SPAN> has the normal distribution.
+    *   (i.i.d.) copies of $x$, and that $x$ has the normal distribution.
     *   This confidence interval is computed based on the statistic
     *   
     * <P></P>
@@ -269,7 +269,7 @@ public class Tally extends StatProbe implements Cloneable {
     * <SPAN CLASS="MATH">bar(X)<SUB>n</SUB> =</SPAN> <TT>average()</TT> is the average of these
     *   observations, <SPAN CLASS="MATH"><I>S</I><SUB>n, x</SUB> =</SPAN> <TT>standardDeviation()</TT> is the empirical
     *   standard  deviation.  Under the assumption that the observations
-    *   of <SPAN CLASS="MATH"><I>X</I></SPAN> are  i.i.d. and normally distributed,
+    *   of $x$ are  i.i.d. and normally distributed,
     *   <SPAN CLASS="MATH"><I>T</I></SPAN> has the Student distribution with <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> degrees of freedom.
     *   The confidence interval given by this method is valid <SPAN  CLASS="textit">only if</SPAN>
     *   this assumption is approximately verified, or if <SPAN CLASS="MATH"><I>n</I></SPAN> is large enough
@@ -383,17 +383,17 @@ public class Tally extends StatProbe implements Cloneable {
     * Computes a confidence interval on the variance.
     *   Returns, in elements 0 and 1 of array <TT>interval</TT>, the
     *   left and right boundaries <SPAN CLASS="MATH">[<I>I</I><SUB>1</SUB>, <I>I</I><SUB>2</SUB>]</SPAN> of a confidence interval on the true
-    *  variance <SPAN CLASS="MATH"><I>&#963;</I><SUP>2</SUP></SPAN> of the random variable <SPAN CLASS="MATH"><I>X</I></SPAN>, with confidence level
+    *  variance <SPAN CLASS="MATH"><I>&#963;</I><SUP>2</SUP></SPAN> of the random variable $x$, with confidence level
     *   <TT>level</TT>, assuming that the observations
     *   given to this collector are independent and identically distributed
-    *   (i.i.d.) copies of <SPAN CLASS="MATH"><I>X</I></SPAN>, and that <SPAN CLASS="MATH"><I>X</I></SPAN> has the normal distribution.
+    *   (i.i.d.) copies of $x$, and that $x$ has the normal distribution.
     *   This confidence interval is computed based on the statistic
     *   
     * <SPAN CLASS="MATH"><I>&#967;</I><SUP>2</SUP><SUB>n-1</SUB> = (<I>n</I> - 1)<I>S</I><SUP>2</SUP><SUB>n</SUB>/<I>&#963;</I><SUP>2</SUP></SPAN>
     *   where <SPAN CLASS="MATH"><I>n</I></SPAN> is the number of observations given to this collector since its
     *   last initialization, and <SPAN CLASS="MATH"><I>S</I><SUP>2</SUP><SUB>n</SUB> =</SPAN> <TT>variance()</TT> is the empirical
     *   variance of these observations.  Under the assumption that the observations
-    *   of <SPAN CLASS="MATH"><I>X</I></SPAN> are  i.i.d. and normally distributed,
+    *   of $x$ are  i.i.d. and normally distributed,
     *   
     * <SPAN CLASS="MATH"><I>&#967;</I><SUP>2</SUP><SUB>n-1</SUB></SPAN> has the chi-square distribution with <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> degrees of freedom.
     *   Given the <TT>level</TT> 

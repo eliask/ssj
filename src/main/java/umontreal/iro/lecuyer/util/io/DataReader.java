@@ -39,7 +39,7 @@ public interface DataReader  {
 
 
    /**
-    * Reads the first field labeled as <TT>label</TT> and returns its <TT>String</TT> value.
+    * Reads the first field labeled as <TT>label</TT> and returns its {@code String} value.
     * 
     */
    public String readString (String label) throws IOException;
@@ -67,7 +67,7 @@ public interface DataReader  {
 
 
    /**
-    * Reads the first field labeled as <TT>label</TT> and returns its value as a one-dimensional array of <TT>String</TT>'s.
+    * Reads the first field labeled as <TT>label</TT> and returns its value as a one-dimensional array of {@code String}'s.
     * 
     */
    public String[] readStringArray (String label) throws IOException;
@@ -95,7 +95,7 @@ public interface DataReader  {
 
 
    /**
-    * Reads the first field labeled as <TT>label</TT> and returns its value as a two-dimensional array of <TT>String</TT>'s.
+    * Reads the first field labeled as <TT>label</TT> and returns its value as a two-dimensional array of {@code String}'s.
     * 
     */
    public String[][] readStringArray2D (String label) throws IOException;

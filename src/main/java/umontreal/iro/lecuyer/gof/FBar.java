@@ -31,7 +31,7 @@ import umontreal.iro.lecuyer.probdist.*;
 
 /**
  * This class is similar to {@link FDist}, except that it provides static methods
- * to compute or approximate the complementary distribution function of <SPAN CLASS="MATH"><I>X</I></SPAN>,
+ * to compute or approximate the complementary distribution function of $x$,
  * which we define as 
  * <SPAN CLASS="MATH">bar(F)(<I>x</I>) = <I>P</I>[<I>X</I>&nbsp;&gt;=&nbsp;<I>x</I>]</SPAN>, instead of 
  * <SPAN CLASS="MATH"><I>F</I>(<I>x</I>) = <I>P</I>[<I>X</I>&nbsp;&lt;=&nbsp;<I>x</I>]</SPAN>.

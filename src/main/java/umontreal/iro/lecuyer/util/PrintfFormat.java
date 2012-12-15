@@ -1040,7 +1040,7 @@ public class PrintfFormat implements CharSequence, Appendable {
 
 
    /**
-    * Converts <SPAN CLASS="MATH"><I>x</I></SPAN> to a String representation in base <SPAN CLASS="MATH"><I>b</I></SPAN> using formatting similar
+    * Converts $x$ to a String representation in base <SPAN CLASS="MATH"><I>b</I></SPAN> using formatting similar
     * to the <SPAN CLASS="MATH"><I>f</I></SPAN> methods. Uses a total of at least <TT>fieldwidth</TT> positions
     * (including the sign and point when they appear) and <TT>accuracy</TT> digits
     *  after the decimal point. If <TT>fieldwidth</TT> is negative, the number is

@@ -38,7 +38,7 @@ import umontreal.iro.lecuyer.probdist.*;
  * <I>p</I>(<I>x</I>) = nCr(<I>m</I>, <I>x</I>)nCr(<I>l</I> - <I>m</I>, <I>k</I> - <I>x</I>)/nCr(<I>l</I>, <I>k</I>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for <I>x</I> = max(0, <I>k</I> - <I>l</I> + <I>m</I>),..., min(<I>k</I>, <I>m</I>)
  * </DIV><P></P>
  * where nCr<SPAN CLASS="MATH">(<I>n</I>, <I>x</I>)</SPAN> is the number of possible combinations when choosing
- * <SPAN CLASS="MATH"><I>x</I></SPAN> elements among a set of <SPAN CLASS="MATH"><I>n</I></SPAN> elements,
+ * $x$ elements among a set of <SPAN CLASS="MATH"><I>n</I></SPAN> elements,
  * <SPAN CLASS="MATH"><I>m</I></SPAN>, <SPAN CLASS="MATH"><I>l</I></SPAN> and <SPAN CLASS="MATH"><I>k</I></SPAN> are integers that satisfy <SPAN CLASS="MATH">0 &lt; <I>m</I>&nbsp;&lt;=&nbsp;<I>l</I></SPAN> and 
  * <SPAN CLASS="MATH">0 &lt; <I>k</I>&nbsp;&lt;=&nbsp;<I>l</I></SPAN>.
  * 

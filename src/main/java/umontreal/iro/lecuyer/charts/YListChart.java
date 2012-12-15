@@ -31,8 +31,8 @@ package umontreal.iro.lecuyer.charts;
  * {@link umontreal.iro.lecuyer.charts.XYLineChart XYLineChart}.
  * Each {@link YListChart} object is associated with a
  * {@link umontreal.iro.lecuyer.charts.YListSeriesCollection YListSeriesCollection} data set.
- * The data is given as one or more lists of <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates.
- * The <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates are
+ * The data is given as one or more lists of $y$-coordinates.
+ * The $x$-coordinates are
  * regularly-spaced multiples of the indices of the data points.
  * 
  */
@@ -53,21 +53,21 @@ public class YListChart extends XYLineChart  {
 
 
    /**
-    * Initializes a new <TT>YListChart</TT> instance with set of points <TT>data</TT>.
+    * Initializes a new <TT>YListChart</TT> instance with set of points {@code data}.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT>  a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    the $x$-axis, and <TT>YLabel</TT>  a short description of the $y$-axis.
     *    The input vectors represents a set of plotting data. More specifically,
-    *    each vector <TT>data</TT> represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates set.
-    *    Position in the vector will form the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
-    *    Indeed, the value <TT>data</TT><SPAN CLASS="MATH">[<I>j</I>]</SPAN> corresponds to the point
+    *    each vector {@code data} represents a $y$-coordinates set.
+    *    Position in the vector will form the $x$-coordinates.
+    *    Indeed, the value {@code data}<SPAN CLASS="MATH">[<I>j</I>]</SPAN> corresponds to the point
     *    
     * <SPAN CLASS="MATH">(<I>j</I> + 1,<texttt>data</texttt>[<I>j</I>])</SPAN> (but rescaled) on the chart.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -84,19 +84,19 @@ public class YListChart extends XYLineChart  {
    /**
     * Similar to the constructor  above.  Except that if <TT>flag</TT> is <TT>true</TT>, the points are
     *  
-    * <SPAN CLASS="MATH">(<I>j</I> + 1,<TT>data</TT>[<I>j</I>])</SPAN> for each series;
+    * <SPAN CLASS="MATH">(<I>j</I> + 1,{@code data}[<I>j</I>])</SPAN> for each series;
     *   but if <TT>flag</TT> is <TT>false</TT>,
     *   the points are 
-    * <SPAN CLASS="MATH">((<I>j</I> + 1)/<I>n</I>,<TT>data</TT>[<I>j</I>])</SPAN>, where <SPAN CLASS="MATH"><I>n</I></SPAN> is
-    *   the number of points of each series in <TT>data</TT>.
+    * <SPAN CLASS="MATH">((<I>j</I> + 1)/<I>n</I>,{@code data}[<I>j</I>])</SPAN>, where <SPAN CLASS="MATH"><I>n</I></SPAN> is
+    *   the number of points of each series in {@code data}.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
-    *    @param flag to choose the step between <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates
+    *    @param flag to choose the step between $x$-coordinates
     * 
     *    @param data series of point sets.
     * 
@@ -112,21 +112,21 @@ public class YListChart extends XYLineChart  {
 
    /**
     * Initializes a new <TT>YListChart</TT> instance with a set of points
-    *    <TT>data</TT>.
+    *    {@code data}.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT>  a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    the $x$-axis, and <TT>YLabel</TT>  a short description of the $y$-axis.
     *    The input vector represents a set of plotting data.
-    *    Position in the vector gives the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates of the curve.
-    *    The value <TT>data</TT><SPAN CLASS="MATH">[<I>j</I>]</SPAN> corresponds to the point
-    *    <SPAN CLASS="MATH">(<I>j</I> + 1</SPAN>, <TT>data</TT><SPAN CLASS="MATH">[<I>j</I>]</SPAN>) (but rescaled on the chart) for the curve.
-    *    However, only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT>
+    *    Position in the vector gives the $x$-coordinates of the curve.
+    *    The value {@code data}<SPAN CLASS="MATH">[<I>j</I>]</SPAN> corresponds to the point
+    *    <SPAN CLASS="MATH">(<I>j</I> + 1</SPAN>, {@code data}<SPAN CLASS="MATH">[<I>j</I>]</SPAN>) (but rescaled on the chart) for the curve.
+    *    However, only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data}
     *     will be considered to plot the curve.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data point set.
     * 
@@ -144,15 +144,15 @@ public class YListChart extends XYLineChart  {
 
    /**
     * Similar to the constructor  above, but the points are 
-    * <SPAN CLASS="MATH">(<I>h</I>(<I>j</I> + 1),&nbsp;<TT>data</TT>[<I>j</I>])</SPAN>.
+    * <SPAN CLASS="MATH">(<I>h</I>(<I>j</I> + 1),&nbsp;{@code data}[<I>j</I>])</SPAN>.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
-    *    @param h step between <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates
+    *    @param h step between $x$-coordinates
     * 
     *    @param data point set.
     * 
@@ -169,23 +169,23 @@ public class YListChart extends XYLineChart  {
 
 
    /**
-    * Initializes a new <TT>YListChart</TT> instance with set of points <TT>data</TT>.
+    * Initializes a new <TT>YListChart</TT> instance with set of points {@code data}.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT>  a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    the $x$-axis, and <TT>YLabel</TT>  a short description of the $y$-axis.
     *    The input vectors represents a set of plotting data. More specifically,
-    *    for a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix <TT>data</TT>, each row <TT>data</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set for a curve.
-    *    Position in the vector gives the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates of the curves.
-    *    Indeed, the value <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN> corresponds to the point
-    *    <SPAN CLASS="MATH">(<I>j</I> + 1</SPAN>, <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN>) (but rescaled on the chart) for curve <SPAN CLASS="MATH"><I>i</I></SPAN>.
-    *    However, only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of each <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>]</SPAN>
+    *    for a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix {@code data}, each row {@code data}
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set for a curve.
+    *    Position in the vector gives the $x$-coordinates of the curves.
+    *    Indeed, the value {@code data}<SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN> corresponds to the point
+    *    <SPAN CLASS="MATH">(<I>j</I> + 1</SPAN>, {@code data}<SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN>) (but rescaled on the chart) for curve <SPAN CLASS="MATH"><I>i</I></SPAN>.
+    *    However, only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of each {@code data}<SPAN CLASS="MATH">[<I>i</I>]</SPAN>
     *     will be considered to plot each curve.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 

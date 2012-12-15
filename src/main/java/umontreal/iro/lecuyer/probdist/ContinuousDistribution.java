@@ -69,7 +69,7 @@ public abstract class ContinuousDistribution implements Distribution  {
     };
 
    /**
-    * Returns <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN>, the density evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Returns <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN>, the density evaluated at $x$.
     * 
     * @param x value at which the density is evaluated
     * 
@@ -127,7 +127,7 @@ public abstract class ContinuousDistribution implements Distribution  {
     * Computes the inverse distribution function 
     * <SPAN CLASS="MATH"><I>x</I> = <I>F</I><SUP>-1</SUP>(<I>u</I>)</SPAN>,
     *     using the Brent-Dekker method. The interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> <SPAN  CLASS="textit">must</SPAN> contain
-    *     the root <SPAN CLASS="MATH"><I>x</I></SPAN> such that 
+    *     the root $x$ such that 
     * <SPAN CLASS="MATH"><I>F</I>(<I>a</I>)&nbsp;&lt;=&nbsp;<I>u</I>&nbsp;&lt;=&nbsp;<I>F</I>(<I>b</I>)</SPAN>, where <SPAN CLASS="MATH"><I>u</I> = <I>F</I>(<I>x</I>)</SPAN>.
     *     The calculations are done with an approximate precision of <TT>tol</TT>.
     *     Returns 

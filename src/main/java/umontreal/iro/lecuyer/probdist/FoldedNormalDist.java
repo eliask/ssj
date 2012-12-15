@@ -353,9 +353,9 @@ public class FoldedNormalDist extends ContinuousDistribution {
 
 
    /**
-    * Returns a <TT>String</TT> containing information about the current distribution.
+    * Returns a {@code String} containing information about the current distribution.
     * 
-    * @return returns a <TT>String</TT> containing information about the current distribution.
+    * @return returns a {@code String} containing information about the current distribution.
     * 
     */
    public String toString () {

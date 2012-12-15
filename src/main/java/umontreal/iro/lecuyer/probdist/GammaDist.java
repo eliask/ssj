@@ -199,7 +199,7 @@ public class GammaDist extends ContinuousDistribution {
 
 
    /**
-    * Computes the density function at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Computes the density function at $x$.
     * 
     */
    public static double density (double alpha, double lambda, double x) {

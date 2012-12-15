@@ -47,8 +47,8 @@ public abstract class ContinuousDistributionMulti {
    /**
     * Returns 
     * <SPAN CLASS="MATH"><I>f</I> (<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>,&#8230;, <I>x</I><SUB>d</SUB>)</SPAN>, the probability density of
-    *   <SPAN CLASS="MATH"><I>X</I></SPAN> evaluated at the point
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>, where 
+    *   $x$ evaluated at the point
+    *  $x$, where 
     * <SPAN CLASS="MATH"><I>x</I> = {<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>,&#8230;, <I>x</I><SUB>d</SUB>}</SPAN>. The convention is that 
     *   
     * <SPAN CLASS="MATH"><texttt>x</texttt>[<texttt>i</texttt> - <texttt>1</texttt>] = <I>x</I><SUB>i</SUB></SPAN>.

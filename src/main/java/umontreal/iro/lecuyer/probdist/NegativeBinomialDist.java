@@ -46,7 +46,7 @@ import optimization.*;
  * 
  * <P>
  * If <SPAN CLASS="MATH"><I>n</I></SPAN> is an integer, <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN> can be interpreted as the probability
- * of having <SPAN CLASS="MATH"><I>x</I></SPAN> failures before the <SPAN CLASS="MATH"><I>n</I></SPAN>-th success in a sequence of
+ * of having $x$ failures before the <SPAN CLASS="MATH"><I>n</I></SPAN>-th success in a sequence of
  * independent Bernoulli trials with  probability of success <SPAN CLASS="MATH"><I>p</I></SPAN>. This special
  * case is implemented as the Pascal distribution (see {@link PascalDist}).
  * 

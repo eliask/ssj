@@ -40,7 +40,7 @@ import umontreal.iro.lecuyer.randvar.*;
  * <DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="GeoVGeqn"></A>
  * <I>S</I>(<I>t</I>) = <I>S</I>(0) exp(<I>&#956;t</I> + <I>X</I>(<I>t</I>;<I>&#963;</I>, <I>&#957;</I>, <I>&#952;</I>) + <I>&#969;t</I>),
  * </DIV><P></P>
- * where <SPAN CLASS="MATH"><I>X</I></SPAN> is a variance gamma process and
+ * where $x$ is a variance gamma process and
  * 
  * <P></P>
  * <DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="omegaEqn"></A>
@@ -70,7 +70,7 @@ public class GeometricVarianceGammaProcess extends StochasticProcess  {
     * <SPAN CLASS="MATH"><I>&#956;</I> = <texttt>mu</texttt></SPAN> and initial value 
     * <SPAN CLASS="MATH"><I>S</I>(<I>t</I><SUB>0</SUB>) = <texttt>s0</texttt></SPAN>.
     * The <TT>stream</TT> is  used to generate the {@link VarianceGammaProcess} object used to implement
-    * <SPAN CLASS="MATH"><I>X</I></SPAN> in.
+    * $x$ in.
     * 
     */
    public GeometricVarianceGammaProcess (double s0, double theta,
@@ -240,7 +240,7 @@ public class GeometricVarianceGammaProcess extends StochasticProcess  {
 
 
    /**
-    * Returns a reference to the variance gamma process <SPAN CLASS="MATH"><I>X</I></SPAN> defined
+    * Returns a reference to the variance gamma process $x$ defined
     * in the constructor.
     * 
     */

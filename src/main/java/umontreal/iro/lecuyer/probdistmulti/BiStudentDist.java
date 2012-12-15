@@ -17,7 +17,7 @@ import umontreal.iro.lecuyer.probdist.StudentDist;
 
 /**
  * Extends the class {@link ContinuousDistribution2Dim} for the <EM> standard  bivariate Student's <SPAN CLASS="MATH"><I>t</I></SPAN></EM> distribution. 
- *  The correlation between <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>Y</I></SPAN> is <SPAN CLASS="MATH"><I>r</I></SPAN>
+ *  The correlation between $x$ and $y$ is <SPAN CLASS="MATH"><I>r</I></SPAN>
  *  and the number of degrees of freedom is <SPAN CLASS="MATH"><I>&#957;</I></SPAN>.
  * Its probability density is 
  * 

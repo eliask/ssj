@@ -62,9 +62,9 @@ public class GofStat {
     * <SPAN CLASS="MATH"><I>i</I> = 0, 1,&#8230;, <I>N</I> - 1</SPAN>,
     *   where <SPAN CLASS="MATH"><I>F</I></SPAN> is a <EM>continuous</EM> distribution function,
     *   and returns the result as an array of length <SPAN CLASS="MATH"><I>N</I></SPAN>.
-    *   <SPAN CLASS="MATH"><I>V</I></SPAN> represents the <SPAN CLASS="MATH"><I>N</I></SPAN> observations contained in <TT>data</TT>,
+    *   <SPAN CLASS="MATH"><I>V</I></SPAN> represents the <SPAN CLASS="MATH"><I>N</I></SPAN> observations contained in {@code data},
     *   and <SPAN CLASS="MATH"><I>U</I></SPAN>, the returned transformed observations.
-    *   If <TT>data</TT> contains random variables from the distribution function
+    *   If {@code data} contains random variables from the distribution function
     *   <TT>dist</TT>, then the result will contain uniform random variables
     *   over <SPAN CLASS="MATH">[0, 1]</SPAN>.
     * 
@@ -93,7 +93,7 @@ public class GofStat {
     * <SPAN CLASS="MATH"><I>i</I> = 0, 1,&#8230;, <I>N</I> - 1</SPAN>,
     *    where <SPAN CLASS="MATH"><I>F</I></SPAN> is a <EM>discrete</EM> distribution function,
     *    and returns the result as an array of length <SPAN CLASS="MATH"><I>N</I></SPAN>.
-    *   <SPAN CLASS="MATH"><I>V</I></SPAN> represents the <SPAN CLASS="MATH"><I>N</I></SPAN> observations contained in <TT>data</TT>,
+    *   <SPAN CLASS="MATH"><I>V</I></SPAN> represents the <SPAN CLASS="MATH"><I>N</I></SPAN> observations contained in {@code data},
     *   and <SPAN CLASS="MATH"><I>U</I></SPAN>, the returned transformed observations.
     * 
     * <P>
@@ -213,7 +213,7 @@ public class GofStat {
    /**
     * Applies one iteration of the <EM>iterated spacings</EM>
     *    transformation.
-    *    Let <SPAN CLASS="MATH"><I>U</I></SPAN> be the <SPAN CLASS="MATH"><I>N</I></SPAN> observations contained into <TT>data</TT>,
+    *    Let <SPAN CLASS="MATH"><I>U</I></SPAN> be the <SPAN CLASS="MATH"><I>N</I></SPAN> observations contained into {@code data},
     *    and let <SPAN CLASS="MATH"><I>S</I></SPAN> be the spacings contained into <TT>spacings</TT>,
     *    Assumes that <SPAN CLASS="MATH"><I>S</I>[0..<I>N</I>]</SPAN> contains the <EM>spacings</EM>
     *    between <SPAN CLASS="MATH"><I>N</I></SPAN> real numbers 
@@ -714,7 +714,7 @@ public class GofStat {
 
    /**
     * Computes and returns the chi-square statistic for the
-    *    observations stored in <TT>data</TT>, assuming that these observations follow
+    *    observations stored in {@code data}, assuming that these observations follow
     *    the discrete distribution <TT>dist</TT>.  For <TT>dist</TT>, we assume that
     *    there is one set 
     * <SPAN CLASS="MATH"><I>S</I> = {<I>a</I>, <I>a</I> + 1,..., <I>b</I> - 1, <I>b</I>}</SPAN>, where <SPAN CLASS="MATH"><I>a</I> &lt; <I>b</I></SPAN> and <SPAN CLASS="MATH"><I>a</I>&nbsp;&gt;=&nbsp; 0</SPAN>,
@@ -726,7 +726,7 @@ public class GofStat {
     * <SPAN CLASS="MATH"><I>nP</I>(<I>a</I><SUB>0</SUB>&nbsp;&lt;=&nbsp;<I>s</I> &lt; <I>a</I><SUB>1</SUB>) = <I>nP</I>(<I>a</I><SUB>1</SUB>&nbsp;&lt;=&nbsp;<I>s</I> &lt; <I>a</I><SUB>2</SUB>) = <SUP> ... </SUP> = <I>nP</I>(<I>a</I><SUB>j-1</SUB>&nbsp;&lt;=&nbsp;<I>s</I> &lt; <I>a</I><SUB>j</SUB>)</SPAN>
     *    for a discrete distribution, where <SPAN CLASS="MATH"><I>n</I></SPAN> is the sample size, i.e.,
     *    the number of
-    *    observations stored into <TT>data</TT>.
+    *    observations stored into {@code data}.
     *    To perform a general chi-square test, the method starts
     *    from <TT>smin</TT> and finds the first non-negligible
     *    probability 
@@ -853,11 +853,11 @@ public class GofStat {
 
    /**
     * Computes the chi-square statistic for a continuous distribution.
-    *    Here, the equiprobable case can be used.  Assuming that <TT>data</TT> contains
+    *    Here, the equiprobable case can be used.  Assuming that {@code data} contains
     *    observations coming from the uniform distribution, the <SPAN CLASS="MATH">[0, 1]</SPAN> interval
     *    is divided into <SPAN CLASS="MATH">1/<I>p</I></SPAN> subintervals, where <SPAN CLASS="MATH"><I>p</I> =</SPAN> <TT>minExp</TT><SPAN CLASS="MATH">/<I>n</I></SPAN>, <SPAN CLASS="MATH"><I>n</I></SPAN>
     *    being the sample size, i.e., the number of observations stored in
-    *    <TT>data</TT>.  For each subinterval, the method counts the number of
+    *    {@code data}.  For each subinterval, the method counts the number of
     *    contained observations and the chi-square statistic is computed
     *    using {@link #chi2Equal(double,int[],int,int) chi2Equal}.
     *    We usually choose <TT>minExp</TT> = 10.

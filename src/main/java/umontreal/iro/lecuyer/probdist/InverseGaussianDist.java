@@ -117,7 +117,7 @@ public class InverseGaussianDist extends ContinuousDistribution {
    /**
     * Computes the density function for the
     *      inverse gaussian distribution with parameters <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#955;</I></SPAN>,
-    *      evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *      evaluated at $x$.
     * 
     */
    public static double density (double mu, double lambda, double x) {
@@ -138,7 +138,7 @@ public class InverseGaussianDist extends ContinuousDistribution {
    /**
     * Computes the distribution function
     *    of the inverse gaussian distribution with parameters <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and
-    *    <SPAN CLASS="MATH"><I>&#955;</I></SPAN>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *    <SPAN CLASS="MATH"><I>&#955;</I></SPAN>, evaluated at $x$.
     * 
     */
    public static double cdf (double mu, double lambda, double x) {
@@ -160,7 +160,7 @@ public class InverseGaussianDist extends ContinuousDistribution {
    
    /**
     * Computes the complementary distribution function of the inverse gaussian distribution
-    *    with parameters <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#955;</I></SPAN>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *    with parameters <SPAN CLASS="MATH"><I>&#956;</I></SPAN> and <SPAN CLASS="MATH"><I>&#955;</I></SPAN>, evaluated at $x$.
     * 
     */
    public static double barF (double mu, double lambda, double x) {

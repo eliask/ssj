@@ -113,9 +113,9 @@ public class EmpiricalSeriesCollection extends SSJXYSeriesCollection  {
 
    /**
     * Creates a new <TT>EmpiricalSeriesCollection</TT> instance with default
-    *    parameters and a given series <TT>data</TT>. The values of <TT>data</TT>
+    *    parameters and a given series {@code data}. The values of {@code data}
     *    <SPAN  CLASS="textit">must be sorted</SPAN> in increasing order.  However, only <SPAN  CLASS="textit">the first</SPAN>
-    *   <TT>numPoints</TT> of <TT>data</TT> will be considered for the series.
+    *   {@code numPoints} of {@code data} will be considered for the series.
     * 
     * @param data series of point sets.
     * 
@@ -269,7 +269,7 @@ public class EmpiricalSeriesCollection extends SSJXYSeriesCollection  {
 
    /**
     * Adds a data series into the series collection. Only <SPAN  CLASS="textit">the first</SPAN>
-    *   <TT>numPoints</TT> of <TT>observationSet</TT>
+    *   {@code numPoints} of <TT>observationSet</TT>
     *   will be added to the new series.
     * 
     * @param observationSet new series values.

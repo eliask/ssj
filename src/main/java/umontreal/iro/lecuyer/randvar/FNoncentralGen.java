@@ -32,10 +32,10 @@ import umontreal.iro.lecuyer.probdist.*;
 /**
  * This class implements random variate generators for the 
  * <SPAN  CLASS="textit">noncentral F</SPAN>-distribution.
- * If <SPAN CLASS="MATH"><I>X</I></SPAN> is a noncentral chi-square random variable with <SPAN CLASS="MATH"><I>&#957;</I><SUB>1</SUB> &gt; 0</SPAN> degrees of 
+ * If $x$ is a noncentral chi-square random variable with <SPAN CLASS="MATH"><I>&#957;</I><SUB>1</SUB> &gt; 0</SPAN> degrees of 
  * freedom and noncentrality parameter 
- * <SPAN CLASS="MATH"><I>&#955;</I> &gt; 0</SPAN>, and <SPAN CLASS="MATH"><I>Y</I></SPAN> is a chi-square 
- * random variable (statistically independent of <SPAN CLASS="MATH"><I>X</I></SPAN>) with <SPAN CLASS="MATH"><I>&#957;</I><SUB>2</SUB> &gt; 0</SPAN> degrees
+ * <SPAN CLASS="MATH"><I>&#955;</I> &gt; 0</SPAN>, and $y$ is a chi-square 
+ * random variable (statistically independent of $x$) with <SPAN CLASS="MATH"><I>&#957;</I><SUB>2</SUB> &gt; 0</SPAN> degrees
  *  of freedom, then
  * 
  * <P></P>

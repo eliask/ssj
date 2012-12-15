@@ -34,7 +34,7 @@ import   java.util.Formatter;
 import   java.awt.Color;
 
 /**
- * Stores data used in a <TT>CategoryChart</TT>.
+ * Stores data used in a {@link CategoryChart}.
  * This class provides tools to manage data sets and rendering options, and modify
  * plot color, plot style, and marks on points for each series.
  * 
@@ -50,7 +50,7 @@ public abstract class SSJCategorySeriesCollection  {
     * 
     * @param series required series value.
     * 
-    *    @return <SPAN CLASS="MATH"><I>x</I></SPAN>-value at the specified index in the specified series.
+    *    @return $x$-value at the specified index in the specified series.
     * 
     */
    public String getCategory (int series)  {
@@ -59,13 +59,13 @@ public abstract class SSJCategorySeriesCollection  {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>y</I></SPAN>-value at the specified index in the specified series.
+    * Returns the $y$-value at the specified index in the specified series.
     * 
     * @param series required series value.
     * 
     *    @param index value's index.
     * 
-    *    @return <SPAN CLASS="MATH"><I>y</I></SPAN>-value at the specified index in the specified series.
+    *    @return $y$-value at the specified index in the specified series.
     * 
     */
    public double getValue (int series, int index)  {
@@ -85,7 +85,7 @@ public abstract class SSJCategorySeriesCollection  {
 
 
    /**
-    * Returns range (<SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates) min and max values.
+    * Returns range ($y$-coordinates) min and max values.
     * 
     * @return range min and max values.
     * 
@@ -94,7 +94,7 @@ public abstract class SSJCategorySeriesCollection  {
 
 
    /**
-    * Returns in a <TT>String</TT> all data contained in the current object.
+    * Returns in a {@code String} all data contained in the current object.
     * 
     * @return All data contained in the current object as a {@link String}.
     * 

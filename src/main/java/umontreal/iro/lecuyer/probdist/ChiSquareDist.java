@@ -128,7 +128,7 @@ public class ChiSquareDist extends ContinuousDistribution {
 
    /**
     * Computes the chi-square distribution function with <SPAN CLASS="MATH"><I>n</I></SPAN> degrees of freedom,
-    *  evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>. The method tries to return <SPAN CLASS="MATH"><I>d</I></SPAN> decimals digits of precision,
+    *  evaluated at $x$. The method tries to return <SPAN CLASS="MATH"><I>d</I></SPAN> decimals digits of precision,
     *   but there is no guarantee.
     * 
     */
@@ -145,7 +145,7 @@ public class ChiSquareDist extends ContinuousDistribution {
 
    /**
     * Computes the complementary chi-square distribution function with <SPAN CLASS="MATH"><I>n</I></SPAN> degrees
-    *  of freedom, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>. The method tries to return <SPAN CLASS="MATH"><I>d</I></SPAN> decimals digits
+    *  of freedom, evaluated at $x$. The method tries to return <SPAN CLASS="MATH"><I>d</I></SPAN> decimals digits
     *  of precision,  but there is no guarantee.
     * 
     */

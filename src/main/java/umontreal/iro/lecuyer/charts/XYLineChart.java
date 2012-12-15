@@ -95,33 +95,33 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>XYLineChart</TT> instance with sets of points <TT>data</TT>.
+    * Initializes a new <TT>XYLineChart</TT> instance with sets of points {@code data}.
     * <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of the
-    * <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT> a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    * The input parameter <TT>data</TT>  represents a set of plotting data.
+    * $x$-axis, and <TT>YLabel</TT> a short description of the $y$-axis.
+    * The input parameter {@code data}  represents a set of plotting data.
     * 
     * <P>
     * For example, if one <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix <TT>data1</TT> is given as argument
-    *  <TT>data</TT>, then the first row <TT>data1</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate vector, and every other row <TT>data1</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set for a curve.
+    *  {@code data}, then the first row <TT>data1</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
+    *  $x$-coordinate vector, and every other row <TT>data1</TT>
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set for a curve.
     *   Therefore matrix <TT>data1</TT><SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN>, 
     * <SPAN CLASS="MATH"><I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>,  corresponds
-    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
+    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same $x$-coordinates.
     * 
     * <P>
-    * However, one may want to plot several curves with different <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
+    * However, one may want to plot several curves with different $x$-coordinates.
     *   In that case, one should give the curves as matrices with two rows.
-    * For examples, if the argument <TT>data</TT> is made of three 2-row matrices
+    * For examples, if the argument {@code data} is made of three 2-row matrices
     * <TT>data1</TT>, <TT>data2</TT> and <TT>data3</TT>, then they represents
-    *  three different curves, <TT>data*</TT><SPAN CLASS="MATH">[0]</SPAN> being the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates,
-    *  and  <TT>data*</TT><SPAN CLASS="MATH">[1]</SPAN> the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of the curves.
+    *  three different curves, <TT>data*</TT><SPAN CLASS="MATH">[0]</SPAN> being the $x$-coordinates,
+    *  and  <TT>data*</TT><SPAN CLASS="MATH">[1]</SPAN> the $y$-coordinates of the curves.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -136,24 +136,24 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>XYLineChart</TT> instance with sets of points <TT>data</TT>.
+    * Initializes a new <TT>XYLineChart</TT> instance with sets of points {@code data}.
     * <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of the
-    * <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT> a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    *  If <TT>data</TT> is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
-    *  then the first row <TT>data</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate vector, and every other row <TT>data</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set of points.
-    *   Therefore matrix <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
+    * $x$-axis, and <TT>YLabel</TT> a short description of the $y$-axis.
+    *  If {@code data} is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
+    *  then the first row {@code data}<SPAN CLASS="MATH">[0]</SPAN> represents the
+    *  $x$-coordinate vector, and every other row {@code data}
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set of points.
+    *   Therefore matrix {@code data}<SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
     * <SPAN CLASS="MATH"><I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>,  corresponds
-    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
-    *   However, only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT> will
+    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same $x$-coordinates.
+    *   However, only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data} will
     *   be considered to plot each curve.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -170,26 +170,26 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>XYLineChart</TT> instance using subsets of <TT>data</TT>.
-    * <TT>data[x][.]</TT> will form the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates and
-    * <TT>data[y][.]</TT> will form the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of the chart.
+    * Initializes a new <TT>XYLineChart</TT> instance using subsets of {@code data}.
+    * <TT>data[x][.]</TT> will form the $x$-coordinates and
+    * <TT>data[y][.]</TT> will form the $y$-coordinates of the chart.
     * <TT>title</TT> sets a title, <TT>XLabel</TT> is a short description of the
-    * <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT> is a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    * Warning: if the new <SPAN CLASS="MATH"><I>x</I></SPAN>-axis coordinates are not monotone increasing, then
+    * $x$-axis, and <TT>YLabel</TT> is a short description of the $y$-axis.
+    * Warning: if the new $x$-axis coordinates are not monotone increasing, then
     * they will automatically be sorted in increasing order so the points will
-    * be reordered, but the original <TT>data</TT> is not changed.
+    * be reordered, but the original {@code data} is not changed.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
-    *    @param x Index of data forming the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates
+    *    @param x Index of data forming the $x$-coordinates
     * 
-    *    @param y Index of data forming the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates
+    *    @param y Index of data forming the $y$-coordinates
     * 
     * 
     */
@@ -208,17 +208,17 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>XYLineChart</TT> instance with data <TT>data</TT>.
-    *    The input parameter <TT>data</TT> represents a set of plotting data. A
+    * Initializes a new <TT>XYLineChart</TT> instance with data {@code data}.
+    *    The input parameter {@code data} represents a set of plotting data. A
     *    {@link cern.colt.list.DoubleArrayList DoubleArrayList} from the Colt library is
     *    used to store the data. The description is similar to the
     *    constructor  {@link YListChart} with <TT>double[]... data</TT>.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -233,16 +233,16 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>XYLineChart</TT> instance with data <TT>data</TT>.
-    *    The input parameter <TT>data</TT> represents a set of plotting data.
+    * Initializes a new <TT>XYLineChart</TT> instance with data {@code data}.
+    *    The input parameter {@code data} represents a set of plotting data.
     *    {@link org.jfree.data.xy.XYSeriesCollection XYSeriesCollection} is a
     *    <TT>JFreeChart</TT> container class to store <SPAN CLASS="MATH"><I>XY</I></SPAN> plots.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series collection.
     * 
@@ -257,7 +257,7 @@ public class XYLineChart extends XYChart  {
 
    /**
     * Adds a data series into the series collection. Vector <TT>x</TT> represents
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates and vector <TT>y</TT> represents the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of
+    *    the $x$-coordinates and vector <TT>y</TT> represents the $y$-coordinates of
     *    the series. <TT>name</TT> and <TT>plotStyle</TT> are the name and the plot
     *    style associated to the series.
     * 
@@ -282,7 +282,7 @@ public class XYLineChart extends XYChart  {
 
    /**
     * Adds a data series into the series collection. Vector <TT>x</TT> represents
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates and vector <TT>y</TT> represents the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of
+    *    the $x$-coordinates and vector <TT>y</TT> represents the $y$-coordinates of
     *    the series.
     * 
     * @param x <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> coordinates.
@@ -301,8 +301,8 @@ public class XYLineChart extends XYChart  {
 
    /**
     * Adds a data series into the series collection. Vector <TT>x</TT> represents
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates and vector <TT>y</TT> represents the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of
-    *    the series. Only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>x</TT> and
+    *    the $x$-coordinates and vector <TT>y</TT> represents the $y$-coordinates of
+    *    the series. Only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of <TT>x</TT> and
     *    <TT>y</TT> will be taken into account for the new series.
     * 
     * @param x <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> coordinates.
@@ -322,14 +322,14 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Adds the new collection of data series <TT>data</TT> into the series collection.
-    *    If <TT>data</TT> is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
-    *  then the first row <TT>data</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate vector, and every other row <TT>data</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set of points.
-    *   Therefore matrix <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
+    * Adds the new collection of data series {@code data} into the series collection.
+    *    If {@code data} is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
+    *  then the first row {@code data}<SPAN CLASS="MATH">[0]</SPAN> represents the
+    *  $x$-coordinate vector, and every other row {@code data}
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set of points.
+    *   Therefore matrix {@code data}<SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
     * <SPAN CLASS="MATH"><I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>,  corresponds
-    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
+    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same $x$-coordinates.
     * 
     * @param data series of point sets.
     * 
@@ -343,15 +343,15 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Adds the new collection of data series <TT>data</TT> into the series collection.
-    *    If <TT>data</TT> is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
-    *  then the first row <TT>data</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate vector, and every other row <TT>data</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set of points.
-    *   Therefore matrix <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
+    * Adds the new collection of data series {@code data} into the series collection.
+    *    If {@code data} is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
+    *  then the first row {@code data}<SPAN CLASS="MATH">[0]</SPAN> represents the
+    *  $x$-coordinate vector, and every other row {@code data}
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set of points.
+    *   Therefore matrix {@code data}<SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
     * <SPAN CLASS="MATH"><I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>,  corresponds
-    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
-    *   However, only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT> will
+    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same $x$-coordinates.
+    *   However, only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data} will
     *   be taken into account for the new series.
     * 
     * @param data series of point sets.
@@ -391,7 +391,7 @@ public class XYLineChart extends XYChart  {
 
 
    /**
-    * Synchronizes <SPAN CLASS="MATH"><I>X</I></SPAN>-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th series <SPAN CLASS="MATH"><I>x</I></SPAN>-values.
+    * Synchronizes $x$-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th series $x$-values.
     * 
     * @param s series used to define ticks.
     * 

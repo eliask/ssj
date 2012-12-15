@@ -47,7 +47,7 @@ import umontreal.iro.lecuyer.functions.MathFunction;
  * <DIV ALIGN="CENTER" CLASS="mathdisplay">
  * <I>F</I>(<I>x</I>) = &sum;<SUB>j=0</SUB><SUP>x</SUP>nCr(<I>n</I>, <I>j</I>) &nbsp;<I>p</I><SUP>j</SUP>(1 - <I>p</I>)<SUP>n-j</SUP>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for <I>x</I> = 0, 1, 2,&#8230;<I>n</I>,
  * </DIV><P></P>
- * where nCr<SPAN CLASS="MATH">(<I>n</I>, <I>x</I>)</SPAN> is the number of possible combinations of <SPAN CLASS="MATH"><I>x</I></SPAN> elements
+ * where nCr<SPAN CLASS="MATH">(<I>n</I>, <I>x</I>)</SPAN> is the number of possible combinations of $x$ elements
  * chosen among a set of <SPAN CLASS="MATH"><I>n</I></SPAN> elements.
  * 
  */
@@ -324,7 +324,7 @@ public class BinomialDist extends DiscreteDistributionInt {
    /**
     * Computes <SPAN CLASS="MATH"><I>F</I>(<I>x</I>)</SPAN>, the distribution function of a
     *   binomial
-    *   random variable with parameters <SPAN CLASS="MATH"><I>n</I></SPAN> and <SPAN CLASS="MATH"><I>p</I></SPAN>, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *   random variable with parameters <SPAN CLASS="MATH"><I>n</I></SPAN> and <SPAN CLASS="MATH"><I>p</I></SPAN>, evaluated at $x$.
     * 
     */
    public static double cdf (int n, double p, int x) {

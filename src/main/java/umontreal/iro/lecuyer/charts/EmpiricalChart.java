@@ -100,21 +100,21 @@ public class EmpiricalChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>EmpiricalChart</TT> instance with data <TT>data</TT>.
+    * Initializes a new <TT>EmpiricalChart</TT> instance with data {@code data}.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis and <TT>YLabel</TT> a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    *    The input vectors <TT>data</TT> represents a collection of observation sets.
-    *    Each vector of <TT>data</TT> represents a <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates set.
-    *    Therefore <TT>data</TT>
+    *    the $x$-axis and <TT>YLabel</TT> a short description of the $y$-axis.
+    *    The input vectors {@code data} represents a collection of observation sets.
+    *    Each vector of {@code data} represents a $x$-coordinates set.
+    *    Therefore {@code data}
     * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>, is used to draw the <SPAN CLASS="MATH"><I>i</I></SPAN>-th plot.
-    *    The values of each observation set <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>]</SPAN> <SPAN  CLASS="textit">must be sorted</SPAN>
+    *    The values of each observation set {@code data}<SPAN CLASS="MATH">[<I>i</I>]</SPAN> <SPAN  CLASS="textit">must be sorted</SPAN>
     *    in increasing order.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -130,18 +130,18 @@ public class EmpiricalChart extends XYChart  {
 
    /**
     * Initializes a new <TT>EmpiricalChart</TT> instance with a set of points
-    *    <TT>data</TT>. <TT>title</TT> is a title, <TT>XLabel</TT> is a short
-    *    description of the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis and <TT>YLabel</TT> a short description of the
-    *    <SPAN CLASS="MATH"><I>y</I></SPAN>-axis. Vector <TT>data</TT> represents a <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates set. The values
+    *    {@code data}. <TT>title</TT> is a title, <TT>XLabel</TT> is a short
+    *    description of the $x$-axis and <TT>YLabel</TT> a short description of the
+    *    $y$-axis. Vector {@code data} represents a $x$-coordinates set. The values
     *    of this observation set <SPAN  CLASS="textit">must be sorted</SPAN> in increasing order. Only
-    *    <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT> will
+    *    <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data} will
     *    be considered to plot.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -160,14 +160,14 @@ public class EmpiricalChart extends XYChart  {
    /**
     * Similar to the above constructor, but with <TT>DoubleArrayList</TT>.
     *    A {@link cern.colt.list.DoubleArrayList DoubleArrayList} from the Colt library is
-    *    used to store data. The values of each observation set <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>]</SPAN>
+    *    used to store data. The values of each observation set {@code data}<SPAN CLASS="MATH">[<I>i</I>]</SPAN>
     *    <SPAN  CLASS="textit">must be sorted</SPAN> in increasing order.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -191,9 +191,9 @@ public class EmpiricalChart extends XYChart  {
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param tallies series of observation sets.
     * 
@@ -208,16 +208,16 @@ public class EmpiricalChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>EmpiricalChart</TT> instance with data <TT>data</TT>.
-    *    The input parameter <TT>data</TT> represents a set of plotting data.
+    * Initializes a new <TT>EmpiricalChart</TT> instance with data {@code data}.
+    *    The input parameter {@code data} represents a set of plotting data.
     *    <TT>XYSeriesCollection</TT> is a <TT>JFreeChart</TT>-like container class
     *     used to store and manage observation sets.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series collection.
     * 
@@ -254,7 +254,7 @@ public class EmpiricalChart extends XYChart  {
 
 
    /**
-    * Synchronizes <SPAN CLASS="MATH"><I>x</I></SPAN>-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th series <SPAN CLASS="MATH"><I>x</I></SPAN>-values.
+    * Synchronizes $x$-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th series $x$-values.
     * 
     * @param s series used to define ticks.
     * 

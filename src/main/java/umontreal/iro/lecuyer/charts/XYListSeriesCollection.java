@@ -75,25 +75,25 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Creates a new <TT>XYListSeriesCollection</TT> instance with default
-    *    parameters and given data series. The input parameter <TT>data</TT>
+    *    parameters and given data series. The input parameter {@code data}
     *    represents a set of plotting data.
     * 
     * <P>
     * For example, if one <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix <TT>data1</TT> is given as argument,
     *  then the first row <TT>data1</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate vector, and every other row <TT>data1</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set for the points.
+    *  $x$-coordinate vector, and every other row <TT>data1</TT>
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set for the points.
     *   Therefore matrix <TT>data1</TT><SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN>, 
     * <SPAN CLASS="MATH"><I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>,  corresponds
-    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
+    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same $x$-coordinates.
     * 
     * <P>
-    * However, one may want to plot several curves with different <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
+    * However, one may want to plot several curves with different $x$-coordinates.
     *   In that case, one should give the curves as matrices with two rows.
-    * For examples, if the argument <TT>data</TT> is made of three 2-row matrices
+    * For examples, if the argument {@code data} is made of three 2-row matrices
     * <TT>data1</TT>, <TT>data2</TT> and <TT>data3</TT>, then they represents
-    *  three different curves, <TT>data*</TT><SPAN CLASS="MATH">[0]</SPAN> being the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates,
-    *  and  <TT>data*</TT><SPAN CLASS="MATH">[1]</SPAN> the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of the curves.
+    *  three different curves, <TT>data*</TT><SPAN CLASS="MATH">[0]</SPAN> being the $x$-coordinates,
+    *  and  <TT>data*</TT><SPAN CLASS="MATH">[1]</SPAN> the $y$-coordinates of the curves.
     * 
     * <P>
     * However, we may also consider the sets of points above not as part of curves,
@@ -146,16 +146,16 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Creates a new <TT>XYListSeriesCollection</TT> instance with default
-    *    parameters and given points <TT>data</TT>.
-    *  If <TT>data</TT> is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
-    *  then the first row <TT>data</TT><SPAN CLASS="MATH">[0]</SPAN> represents the
-    *  <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate vector, and every other row <TT>data</TT>
-    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate set of points.
+    *    parameters and given points {@code data}.
+    *  If {@code data} is a <SPAN CLASS="MATH"><I>n</I></SPAN>-row matrix,
+    *  then the first row {@code data}<SPAN CLASS="MATH">[0]</SPAN> represents the
+    *  $x$-coordinate vector, and every other row {@code data}
+    * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 1,&#8230;, <I>n</I> - 1</SPAN>, represents a $y$-coordinate set of points.
     *   Therefore, if the points represents curves to be plotted,
-    *    <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
+    *    {@code data}<SPAN CLASS="MATH">[<I>i</I>][&nbsp;]</SPAN>, 
     * <SPAN CLASS="MATH"><I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>,  corresponds
-    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates.
-    *    Only the first <TT>numPoints</TT> of <TT>data</TT> will be considered
+    *    to <SPAN CLASS="MATH"><I>n</I> - 1</SPAN> curves, all with the same $x$-coordinates.
+    *    Only the first {@code numPoints} of {@code data} will be considered
     * for each of the set of points.
     * 
     * @param data series of point sets.
@@ -201,7 +201,7 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
    /**
     * Creates a new <TT>XYListSeriesCollection</TT> instance with default parameters and given data.
     *    The input parameter represents a set of data plots, the constructor will count the occurrence number
-    *    <SPAN CLASS="MATH"><I>Y</I></SPAN> of each value <SPAN CLASS="MATH"><I>X</I></SPAN> in the <TT>DoubleArrayList</TT>, and plot the point <SPAN CLASS="MATH">(<I>X</I>, <I>Y</I>)</SPAN>.
+    *    $y$ of each value $x$ in the <TT>DoubleArrayList</TT>, and plot the point <SPAN CLASS="MATH">(<I>X</I>, <I>Y</I>)</SPAN>.
     *    Each {@link cern.colt.list.DoubleArrayList DoubleArrayList} variable corresponds to a curve on the chart.
     * 
     * @param data series of point sets.
@@ -292,7 +292,7 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Adds a data series into the series collection. Vector <TT>x</TT> represents
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates and vector <TT>y</TT> represents the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of
+    *    the $x$-coordinates and vector <TT>y</TT> represents the $y$-coordinates of
     *    the series.
     * 
     * @param x <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> coordinates.
@@ -311,8 +311,8 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Adds a data series into the series collection. Vector <TT>x</TT> represents
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates and vector <TT>y</TT> represents the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates of
-    *    the series. Only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>x</TT>
+    *    the $x$-coordinates and vector <TT>y</TT> represents the $y$-coordinates of
+    *    the series. Only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of <TT>x</TT>
     *    and <TT>y</TT> will be added to the new series.
     * 
     * @param x <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> coordinates.
@@ -361,7 +361,7 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Adds a data series into the series collection. The input format of
-    *  <TT>data</TT> is described in constructor
+    *  {@code data} is described in constructor
     * <TT>XYListSeriesCollection(double[][] data)</TT>.
     * 
     * @param data input data.
@@ -376,10 +376,10 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Adds  data series into the series collection. The input format of
-    *  <TT>data</TT> is described in constructor
+    *  {@code data} is described in constructor
     * <TT>XYListSeriesCollection(double[][] data)</TT>.
-    *   Only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT>
-    *  (the first <TT>numPoints</TT> columns of the matrix)
+    *   Only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data}
+    *  (the first {@code numPoints} columns of the matrix)
     *   will be added to each new series.
     * 
     * @param data input data.
@@ -439,7 +439,7 @@ public class XYListSeriesCollection  extends SSJXYSeriesCollection  {
 
    /**
     * Adds a data series into the series collection. The input format of
-    *  <TT>data</TT> is described in constructor
+    *  {@code data} is described in constructor
     * <TT>XYListSeriesCollection (DoubleArrayList... data)</TT>.
     * 
     * @param data data series.

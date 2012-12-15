@@ -176,7 +176,7 @@ public class HypoExponentialDist extends ContinuousDistribution {
     * 
     *    @param x value at which the density is evaluated
     * 
-    *    @return density at <SPAN CLASS="MATH"><I>x</I></SPAN>
+    *    @return density at $x$
     * 
     */
    public static double density (double[] lambda, double x) {
@@ -201,7 +201,7 @@ public class HypoExponentialDist extends ContinuousDistribution {
     * 
     *    @param x value at which the distribution is evaluated
     * 
-    *    @return distribution at <SPAN CLASS="MATH"><I>x</I></SPAN>
+    *    @return distribution at $x$
     * 
     */
    public static double cdf (double[] lambda, double x) {
@@ -219,7 +219,7 @@ public class HypoExponentialDist extends ContinuousDistribution {
     * 
     *    @param x value at which the complementary distribution is evaluated
     * 
-    *    @return complementary distribution at <SPAN CLASS="MATH"><I>x</I></SPAN>
+    *    @return complementary distribution at $x$
     * 
     */
    public static double barF (double[] lambda, double x) {

@@ -85,19 +85,19 @@ public class HistogramChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>HistogramChart</TT> instance with input <TT>data</TT>.
+    * Initializes a new <TT>HistogramChart</TT> instance with input {@code data}.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT> a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    *    The input parameter <TT>data</TT> represents a collection of observation sets.
-    *    Therefore <TT>data</TT>
+    *    the $x$-axis, and <TT>YLabel</TT> a short description of the $y$-axis.
+    *    The input parameter {@code data} represents a collection of observation sets.
+    *    Therefore {@code data}
     * <SPAN CLASS="MATH">[<I>i</I>], <I>i</I> = 0,&#8230;, <I>n</I> - 1</SPAN>, is used to plot the
     *      <SPAN CLASS="MATH"><I>i</I></SPAN>th histogram.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -112,18 +112,18 @@ public class HistogramChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>HistogramChart</TT> instance with input <TT>data</TT>.
+    * Initializes a new <TT>HistogramChart</TT> instance with input {@code data}.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT> a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    *    The input parameter <TT>data</TT> represents an observation set.
-    *   Only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT> will
+    *    the $x$-axis, and <TT>YLabel</TT> a short description of the $y$-axis.
+    *    The input parameter {@code data} represents an observation set.
+    *   Only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data} will
     *   be considered to plot the histogram.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of point sets.
     * 
@@ -142,7 +142,7 @@ public class HistogramChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>HistogramChart</TT> instance with data <TT>data</TT>.
+    * Initializes a new <TT>HistogramChart</TT> instance with data {@code data}.
     *    Each <TT>DoubleArrayList</TT> input parameter represents a collection of
     *    observation sets.
     *    {@link cern.colt.list.DoubleArrayList DoubleArrayList} is from the Colt library
@@ -150,9 +150,9 @@ public class HistogramChart extends XYChart  {
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series of observation sets.
     * 
@@ -173,9 +173,9 @@ public class HistogramChart extends XYChart  {
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param tallies series of observation sets.
     * 
@@ -190,17 +190,17 @@ public class HistogramChart extends XYChart  {
 
 
    /**
-    * Initializes a new <TT>HistogramChart</TT> instance with data <TT>data</TT>.
-    *    The input parameter <TT>data</TT> represents a set of plotting data.
+    * Initializes a new <TT>HistogramChart</TT> instance with data {@code data}.
+    *    The input parameter {@code data} represents a set of plotting data.
     *    {@link umontreal.iro.lecuyer.charts.CustomHistogramDataset CustomHistogramDataset} is a
     *    <TT>JFreeChart</TT>-like container class that stores and manages
     *     observation sets.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param data series collection.
     * 
@@ -225,9 +225,9 @@ public class HistogramChart extends XYChart  {
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param count the number of observation between each bound.
     * 
@@ -287,7 +287,7 @@ public class HistogramChart extends XYChart  {
 
 
    /**
-    * Synchronizes <SPAN CLASS="MATH"><I>x</I></SPAN>-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th histogram bins.
+    * Synchronizes $x$-axis ticks to the <SPAN CLASS="MATH"><I>s</I></SPAN>-th histogram bins.
     * 
     * @param s selects histogram used to define ticks.
     * 

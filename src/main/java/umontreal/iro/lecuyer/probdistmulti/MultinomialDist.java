@@ -127,7 +127,7 @@ public class MultinomialDist extends DiscreteDistributionIntMulti  {
    /**
     * Computes the probability mass function
     *    of the multinomial distribution with parameters <SPAN CLASS="MATH"><I>n</I></SPAN> and
-    *    (<SPAN CLASS="MATH"><I>p</I><SUB>1</SUB></SPAN>,...,<SPAN CLASS="MATH"><I>p</I><SUB>d</SUB></SPAN>) evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *    (<SPAN CLASS="MATH"><I>p</I><SUB>1</SUB></SPAN>,...,<SPAN CLASS="MATH"><I>p</I><SUB>d</SUB></SPAN>) evaluated at $x$.
     * 
     */
    public static double prob (int n, double p[], int x[]) {
@@ -173,7 +173,7 @@ public class MultinomialDist extends DiscreteDistributionIntMulti  {
 
    /**
     * Computes the function <SPAN CLASS="MATH"><I>F</I></SPAN> of the multinomial distribution with
-    *    parameters <SPAN CLASS="MATH"><I>n</I></SPAN> and (<SPAN CLASS="MATH"><I>p</I><SUB>1</SUB></SPAN>,...,<SPAN CLASS="MATH"><I>p</I><SUB>d</SUB></SPAN>) evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *    parameters <SPAN CLASS="MATH"><I>n</I></SPAN> and (<SPAN CLASS="MATH"><I>p</I><SUB>1</SUB></SPAN>,...,<SPAN CLASS="MATH"><I>p</I><SUB>d</SUB></SPAN>) evaluated at $x$.
     * 
     */
    public static double cdf (int n, double p[], int x[]) {

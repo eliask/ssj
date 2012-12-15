@@ -135,7 +135,7 @@ public class BinaryDataWriter extends AbstractDataWriter  {
 
 
    /**
-    * <SPAN  CLASS="textit">Field-type</SPAN> symbol indicating <TT>String</TT> data.
+    * <SPAN  CLASS="textit">Field-type</SPAN> symbol indicating {@code String} data.
     * 
     */
    public final static byte TYPECHAR_STRING  = 'S';

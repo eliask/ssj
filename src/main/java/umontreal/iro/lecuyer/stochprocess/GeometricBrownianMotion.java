@@ -55,7 +55,7 @@ import umontreal.iro.lecuyer.randvar.*;
  * </DIV><P></P>
  * where 
  * <SPAN CLASS="MATH"><I>X</I>(<I>t</I>) = (<I>&#956;</I> - <I>&#963;</I><SUP>2</SUP>/2)<I>t</I> + <I>&#963;tB</I>(<I>t</I>)</SPAN>.
- * The GBM process is simulated by simulating the BM process <SPAN CLASS="MATH"><I>X</I></SPAN> and taking the exponential.
+ * The GBM process is simulated by simulating the BM process $x$ and taking the exponential.
  * This BM process is stored internally.
  * 
  */

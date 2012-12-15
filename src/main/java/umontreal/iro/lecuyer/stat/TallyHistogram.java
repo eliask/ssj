@@ -61,7 +61,7 @@ public class TallyHistogram extends Tally  {
     * Divide the interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> into <SPAN CLASS="MATH"><I>s</I></SPAN> bins of equal width and initializes
     * a counter to 0 for each bin. Whenever an observation falls into a bin,
     * the bin counter is increased by 1. There are two extra bins (and counters)
-    * that count the number of observations <SPAN CLASS="MATH"><I>x</I></SPAN> that fall outside the interval 
+    * that count the number of observations $x$ that fall outside the interval 
     * <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN>: one for those <SPAN CLASS="MATH"><I>x</I> &lt; <I>a</I></SPAN>, and the other for  those <SPAN CLASS="MATH"><I>x</I> &gt; <I>b</I></SPAN>.
     * 
     * @param a left boundary of interval
@@ -131,8 +131,8 @@ public class TallyHistogram extends Tally  {
 
 
    /**
-    * Gives a new observation <SPAN CLASS="MATH"><I>x</I></SPAN> to the statistical collectors.
-    * Increases by 1 the bin counter in which value <SPAN CLASS="MATH"><I>x</I></SPAN> falls.
+    * Gives a new observation $x$ to the statistical collectors.
+    * Increases by 1 the bin counter in which value $x$ falls.
     * Values that fall outside the interval <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> are added in extra bin
     * counter bin[0] if <SPAN CLASS="MATH"><I>x</I> &lt; <I>a</I></SPAN>, and in bin[<SPAN CLASS="MATH"><I>s</I> + 1</SPAN>] if <SPAN CLASS="MATH"><I>x</I> &gt; <I>b</I></SPAN>.
     * 
@@ -222,7 +222,7 @@ public class TallyHistogram extends Tally  {
 
 
    /**
-    * Returns the bin counters as a <TT>String</TT>.
+    * Returns the bin counters as a {@code String}.
     * 
     */
    public String toString() {

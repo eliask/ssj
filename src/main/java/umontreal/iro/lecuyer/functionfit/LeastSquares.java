@@ -59,9 +59,9 @@ public class LeastSquares extends Polynomial implements Serializable {
     *  y[0]),..., (x[n], y[n])</TT>. The constructed polynomial has degree
     *  <TT>degree</TT>.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the points.
+    * @param x the $x$ coordinates of the points.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the points.
+    *    @param y the $y$ coordinates of the points.
     * 
     *    @param degree the degree of the polynomial.
     * 
@@ -83,9 +83,9 @@ public class LeastSquares extends Polynomial implements Serializable {
     *   degree <TT>degree</TT>.
     *  The coordinates of the given points are  <TT>(x[i], y[i])</TT>.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the points.
+    * @param x the $x$ coordinates of the points.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the points.
+    *    @param y the $y$ coordinates of the points.
     * 
     *    @param degree the degree of the polynomial.
     * 
@@ -127,9 +127,9 @@ public class LeastSquares extends Polynomial implements Serializable {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the fitted points.
+    * Returns the $x$ coordinates of the fitted points.
     * 
-    * @return the <SPAN CLASS="MATH"><I>x</I></SPAN> coordinates of the fitted points.
+    * @return the $x$ coordinates of the fitted points.
     * 
     */
    public double[] getX() {
@@ -138,9 +138,9 @@ public class LeastSquares extends Polynomial implements Serializable {
 
 
    /**
-    * Returns the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the fitted points.
+    * Returns the $y$ coordinates of the fitted points.
     * 
-    * @return the <SPAN CLASS="MATH"><I>y</I></SPAN> coordinates of the fitted points.
+    * @return the $y$ coordinates of the fitted points.
     * 
     */
    public double[] getY() {

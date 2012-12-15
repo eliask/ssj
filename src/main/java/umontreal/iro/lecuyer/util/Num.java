@@ -135,7 +135,7 @@ public class Num {
 
 
    /**
-    * Largest <TT>int</TT> <SPAN CLASS="MATH"><I>x</I></SPAN> such that <SPAN CLASS="MATH">2<SUP>x-1</SUP></SPAN> is representable
+    * Largest <TT>int</TT> $x$ such that <SPAN CLASS="MATH">2<SUP>x-1</SUP></SPAN> is representable
     *   (approximately) as a <TT>double</TT>.
     * 
     */
@@ -143,7 +143,7 @@ public class Num {
 
 
    /**
-    * Smallest <TT>int</TT> <SPAN CLASS="MATH"><I>x</I></SPAN> such that <SPAN CLASS="MATH">2<SUP>x-1</SUP></SPAN> is representable
+    * Smallest <TT>int</TT> $x$ such that <SPAN CLASS="MATH">2<SUP>x-1</SUP></SPAN> is representable
     *   (approximately) as a normalised <TT>double</TT>.
     * 
     */
@@ -151,7 +151,7 @@ public class Num {
 
 
    /**
-    * Largest <TT>int</TT> <SPAN CLASS="MATH"><I>x</I></SPAN> such that <SPAN CLASS="MATH">10<SUP>x</SUP></SPAN> is representable
+    * Largest <TT>int</TT> $x$ such that <SPAN CLASS="MATH">10<SUP>x</SUP></SPAN> is representable
     *    (approximately) as a <TT>double</TT>.
     * 
     */
@@ -287,13 +287,13 @@ public class Num {
 
 
    /**
-    * Returns the greatest common divisor (gcd) of <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN>.
+    * Returns the greatest common divisor (gcd) of $x$ and $y$.
     *  
     *  @param x integer
     * 
     *        @param y integer
     * 
-    *        @return the GCD of <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN>
+    *        @return the GCD of $x$ and $y$
     *  
     */
    public static int gcd (int x, int y) {
@@ -310,13 +310,13 @@ public class Num {
 
 
    /**
-    * Returns the greatest common divisor (gcd) of <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN>.
+    * Returns the greatest common divisor (gcd) of $x$ and $y$.
     *  
     *  @param x integer
     * 
     *        @param y integer
     * 
-    *        @return the GCD of <SPAN CLASS="MATH"><I>x</I></SPAN> and <SPAN CLASS="MATH"><I>y</I></SPAN>
+    *        @return the GCD of $x$ and $y$
     *  
     */
    public static long gcd (long x, long y) {
@@ -638,7 +638,7 @@ public class Num {
    /**
     * Returns the value of the trigamma function 
     * <SPAN CLASS="MATH"><I>d&#968;</I>(<I>x</I>)/<I>dx</I></SPAN>, the derivative of
-    *    the digamma function, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *    the digamma function, evaluated at $x$.
     * 
     */
    public static double trigamma (double x) {
@@ -690,7 +690,7 @@ public class Num {
    /**
     * Returns the value of the tetragamma function 
     * <SPAN CLASS="MATH"><I>d</I><SUP>2</SUP><I>&#968;</I>(<I>x</I>)/<I>d</I><SUP>2</SUP><I>x</I></SPAN>, the second
-    *    derivative of the digamma function, evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *    derivative of the digamma function, evaluated at $x$.
     * 
     */
    public static double tetragamma (double x) {
@@ -904,7 +904,7 @@ public class Num {
 
    /**
     * Evaluates the Bernoulli polynomial <SPAN CLASS="MATH"><I>B</I><SUB>n</SUB>(<I>x</I>)</SPAN> of degree <SPAN CLASS="MATH"><I>n</I></SPAN>
-    *   at <SPAN CLASS="MATH"><I>x</I></SPAN>. Only degrees <SPAN CLASS="MATH"><I>n</I>&nbsp;&lt;=&nbsp;8</SPAN> are programmed for now.
+    *   at $x$. Only degrees <SPAN CLASS="MATH"><I>n</I>&nbsp;&lt;=&nbsp;8</SPAN> are programmed for now.
     *  The first Bernoulli polynomials of even degree are:
     * <BR>
     * <DIV ALIGN="CENTER" CLASS="mathdisplay"><A NAME="bernoulli"></A>
@@ -968,7 +968,7 @@ public class Num {
 
    /**
     * Evaluates a series of Chebyshev polynomials <SPAN CLASS="MATH"><I>T</I><SUB>j</SUB></SPAN> at
-    *   <SPAN CLASS="MATH"><I>x</I></SPAN> over the basic interval <SPAN CLASS="MATH">[- 1, &nbsp;1]</SPAN>. It uses
+    *   $x$ over the basic interval <SPAN CLASS="MATH">[- 1, &nbsp;1]</SPAN>. It uses
     *    the method of Clenshaw, i.e., computes and  returns
     *   
     * <P></P>
@@ -1005,7 +1005,7 @@ public class Num {
 
    /**
     * Evaluates a series of shifted Chebyshev polynomials <SPAN CLASS="MATH"><I>T</I><SUB>j</SUB><SUP>*</SUP></SPAN>
-    *    at <SPAN CLASS="MATH"><I>x</I></SPAN> over the basic interval <SPAN CLASS="MATH">[0, &nbsp;1]</SPAN>. It uses
+    *    at $x$ over the basic interval <SPAN CLASS="MATH">[0, &nbsp;1]</SPAN>. It uses
     *    the method of Clenshaw, i.e., computes and  returns
     *   
     * <P></P>
@@ -1129,7 +1129,7 @@ public class Num {
 
 
    /**
-    * Returns the value of <TT>erf</TT>(<SPAN CLASS="MATH"><I>x</I></SPAN>), the error function. It is defined as
+    * Returns the value of <TT>erf</TT>($x$), the error function. It is defined as
     * 
     * <P></P>
     * <DIV ALIGN="CENTER" CLASS="mathdisplay">
@@ -1155,7 +1155,7 @@ public class Num {
 
 
    /**
-    * Returns the value of <TT>erfc</TT>(<SPAN CLASS="MATH"><I>x</I></SPAN>), the complementary error function.
+    * Returns the value of <TT>erfc</TT>($x$), the complementary error function.
     * It is defined as
     * 
     * <P></P>

@@ -235,7 +235,7 @@ public class TallyStore extends Tally  {
 
 
    /**
-    * Returns the observations stored in this object as a <TT>String</TT>.
+    * Returns the observations stored in this object as a {@code String}.
     * 
     */
    public String toString() {

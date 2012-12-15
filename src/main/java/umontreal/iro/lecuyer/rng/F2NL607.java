@@ -398,7 +398,7 @@ public class F2NL607  extends WELL607base {
 
    /**
     * Selects new data for the components of the non-linear generator.
-    *   The number of arrays in <TT>data</TT> will decide the number of components.
+    *   The number of arrays in {@code data} will decide the number of components.
     *   Each of the arrays will be assigned to one of the components. The period
     *   of the resulting non-linear generator will be equal to the lowest common
     *   multiple of the lengths of the arrays. It is thus recommended to choose
@@ -448,7 +448,7 @@ public class F2NL607  extends WELL607base {
 
    /**
     * Selects new data for the components of the non-linear generator.
-    *   The number of arrays in <TT>data</TT> will decide the number of components.
+    *   The number of arrays in {@code data} will decide the number of components.
     *   Each of the arrays will be assigned to one of the components. The period
     *   of the resulting non-linear generator will be equal to the lowest common
     *   multiple of the lengths of the arrays. It is thus recommended to choose

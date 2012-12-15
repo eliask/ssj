@@ -239,7 +239,7 @@ public class InverseDistFromDensity extends ContinuousDistribution  {
     * {@link umontreal.iro.lecuyer.probdist.ContinuousDistribution#setXsup setXsup}
     * of <TT>dist</TT>, for better efficiency.
     * Argument <TT>xc</TT> can be the mean,
-    * the mode or any other <SPAN CLASS="MATH"><I>x</I></SPAN> for which the density is relatively large.
+    * the mode or any other $x$ for which the density is relatively large.
     * The <SPAN CLASS="MATH"><I>u</I></SPAN>-resolution <TT>eps</TT> is the required absolute error in the cdf,
     * and <TT>order</TT> is the degree of the
     * Newton interpolating polynomial over each interval.
@@ -275,7 +275,7 @@ public class InverseDistFromDensity extends ContinuousDistribution  {
 
 
    /**
-    * Computes the probability density at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Computes the probability density at $x$.
     * 
     */
    public double density (double x)  {
@@ -284,7 +284,7 @@ public class InverseDistFromDensity extends ContinuousDistribution  {
 
 
    /**
-    * Computes the  distribution function at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Computes the  distribution function at $x$.
     * 
     */
    public double cdf (double x)  {
@@ -357,7 +357,7 @@ public class InverseDistFromDensity extends ContinuousDistribution  {
 
 
    /**
-    * Returns a <TT>String</TT> containing information about the current distribution.
+    * Returns a {@code String} containing information about the current distribution.
     * 
     * 
     */

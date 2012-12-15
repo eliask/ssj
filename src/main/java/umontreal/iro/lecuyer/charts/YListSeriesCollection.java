@@ -34,7 +34,7 @@ import   org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 /**
  * This class extends
  * {@link umontreal.iro.lecuyer.charts.XYListSeriesCollection XYListSeriesCollection}.
- * The data is given as lists of <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates. The <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates are
+ * The data is given as lists of $y$-coordinates. The $x$-coordinates are
  * regularly spaced multiples of the indices of the data points.
  * 
  */
@@ -108,12 +108,12 @@ public class YListSeriesCollection extends XYListSeriesCollection  {
    /**
     * Creates a new <TT>YListSeriesCollection</TT> instance with default
     *    parameters and given data series. The input vectors represent sets of
-    *    plotting data. More specifically, each vector <TT>data</TT> represents
-    *    a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates set.
-    *    Position in the vector will form the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates. Indeed the value
-    *    <TT>data</TT><SPAN CLASS="MATH">[<I>j</I>]</SPAN> corresponds to the point
+    *    plotting data. More specifically, each vector {@code data} represents
+    *    a $y$-coordinates set.
+    *    Position in the vector will form the $x$-coordinates. Indeed the value
+    *    {@code data}<SPAN CLASS="MATH">[<I>j</I>]</SPAN> corresponds to the point
     *    
-    * <SPAN CLASS="MATH">(<I>j</I> + 1,<TT>data</TT>[<I>j</I>])</SPAN> on the chart.
+    * <SPAN CLASS="MATH">(<I>j</I> + 1,{@code data}[<I>j</I>])</SPAN> on the chart.
     * 
     * @param data series of point sets.
     * 
@@ -127,13 +127,13 @@ public class YListSeriesCollection extends XYListSeriesCollection  {
    /**
     * Similar to the constructor  above, except that if <TT>flag</TT> is <TT>true</TT>, the points are
     *  
-    * <SPAN CLASS="MATH">(<I>j</I> + 1,<TT>data</TT>[<I>j</I>])</SPAN> for each series;
+    * <SPAN CLASS="MATH">(<I>j</I> + 1,{@code data}[<I>j</I>])</SPAN> for each series;
     *   but if <TT>flag</TT> is <TT>false</TT>,
     *   the points are 
-    * <SPAN CLASS="MATH">((<I>j</I> + 1)/<I>n</I>,<TT>data</TT>[<I>j</I>])</SPAN>, where <SPAN CLASS="MATH"><I>n</I></SPAN> is
-    *   the number of points of each series in <TT>data</TT>.
+    * <SPAN CLASS="MATH">((<I>j</I> + 1)/<I>n</I>,{@code data}[<I>j</I>])</SPAN>, where <SPAN CLASS="MATH"><I>n</I></SPAN> is
+    *   the number of points of each series in {@code data}.
     * 
-    * @param flag to choose the step between <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates
+    * @param flag to choose the step between $x$-coordinates
     * 
     *    @param data series of point sets.
     * 
@@ -147,13 +147,13 @@ public class YListSeriesCollection extends XYListSeriesCollection  {
    /**
     * Creates a new <TT>YListSeriesCollection</TT> instance with default
     *    parameters and one data series.
-    *    The vector <TT>data</TT> represents the <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinate of the points,
-    *    and position in the vector represents the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinate.
-    *   However, only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT> will
+    *    The vector {@code data} represents the $y$-coordinate of the points,
+    *    and position in the vector represents the $x$-coordinate.
+    *   However, only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data} will
     *   be considered in the series.
     *   Thus the coordinates of the points are given by
     *    
-    * <SPAN CLASS="MATH">(<I>j</I>,&nbsp;<TT>data</TT>[<I>j</I> - 1])</SPAN>,
+    * <SPAN CLASS="MATH">(<I>j</I>,&nbsp;{@code data}[<I>j</I> - 1])</SPAN>,
     *     for 
     * <SPAN CLASS="MATH"><I>j</I> = 1, 2,&#8230;,<texttt>numPoints</texttt></SPAN>.
     * 
@@ -170,11 +170,11 @@ public class YListSeriesCollection extends XYListSeriesCollection  {
 
    /**
     * Similar to the constructor {@link #YListSeriesCollection(double[],int) YListSeriesCollection}<TT>(data, numPoints)</TT> above,  but the points are 
-    * <SPAN CLASS="MATH">(<I>hj</I>,&nbsp;<TT>data</TT>[<I>j</I> - 1])</SPAN>,
+    * <SPAN CLASS="MATH">(<I>hj</I>,&nbsp;{@code data}[<I>j</I> - 1])</SPAN>,
     *     for 
     * <SPAN CLASS="MATH"><I>j</I> = 1, 2,&#8230;,<texttt>numPoints</texttt></SPAN>.
     * 
-    * @param h step between <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates
+    * @param h step between $x$-coordinates
     * 
     *    @param data point set.
     * 
@@ -189,14 +189,14 @@ public class YListSeriesCollection extends XYListSeriesCollection  {
 
    /**
     * Creates a new <TT>YListSeriesCollection</TT> instance with default
-    *    parameters and given data series. The matrix <TT>data</TT> represents a
-    *    set of plotting data. More specifically, each row of <TT>data</TT>
-    *    represents a <SPAN CLASS="MATH"><I>y</I></SPAN>-coordinates set.
-    *    Position in the vector will form the <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates. Indeed, for each serie
-    *    <SPAN CLASS="MATH"><I>i</I></SPAN>, the value <TT>data</TT><SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN> corresponds to the point
+    *    parameters and given data series. The matrix {@code data} represents a
+    *    set of plotting data. More specifically, each row of {@code data}
+    *    represents a $y$-coordinates set.
+    *    Position in the vector will form the $x$-coordinates. Indeed, for each serie
+    *    <SPAN CLASS="MATH"><I>i</I></SPAN>, the value {@code data}<SPAN CLASS="MATH">[<I>i</I>][<I>j</I>]</SPAN> corresponds to the point
     *    
-    * <SPAN CLASS="MATH">(<I>j</I> + 1,<TT>data</TT>[<I>j</I>])</SPAN> on the chart.
-    *   However, only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>data</TT> will
+    * <SPAN CLASS="MATH">(<I>j</I> + 1,{@code data}[<I>j</I>])</SPAN> on the chart.
+    *   However, only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of {@code data} will
     *   be considered for each series of points.
     * 
     * @param data series of point sets.

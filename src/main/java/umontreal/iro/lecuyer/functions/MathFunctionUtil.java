@@ -38,7 +38,7 @@ public class MathFunctionUtil {
 
 
    /**
-    * Step length in <SPAN CLASS="MATH"><I>x</I></SPAN> to compute derivatives. Default: <SPAN CLASS="MATH">10<SUP>-6</SUP></SPAN>.
+    * Step length in $x$ to compute derivatives. Default: <SPAN CLASS="MATH">10<SUP>-6</SUP></SPAN>.
     * 
     */
    public static double H = 1e-6;
@@ -166,7 +166,7 @@ public class MathFunctionUtil {
     *  ALT="$\displaystyle {\frac{{d^nf(x)}}{{dx^n}}}$">,
     * </DIV><P></P>
     * the <SPAN CLASS="MATH"><I>n</I></SPAN>th derivative of <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN>
-    *  evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    *  evaluated at $x$.
     *  This method first computes
     *  
     * <SPAN CLASS="MATH"><I>f</I><SUB>i</SUB> = <I>f</I> (<I>x</I> + <I>i&#949;</I>)</SPAN>, for 
@@ -274,11 +274,11 @@ public class MathFunctionUtil {
     *  the two filtered arrays, whose size is smaller than or equal to
     *  <TT>x.length</TT>.
     * 
-    * @param x the <SPAN CLASS="MATH"><I>X</I></SPAN> coordinates.
+    * @param x the $x$ coordinates.
     * 
-    *    @param y the <SPAN CLASS="MATH"><I>Y</I></SPAN> coordinates.
+    *    @param y the $y$ coordinates.
     * 
-    *    @return the filtered <SPAN CLASS="MATH"><I>X</I></SPAN> and <SPAN CLASS="MATH"><I>Y</I></SPAN> arrays.
+    *    @return the filtered $x$ and $y$ arrays.
     * 
     */
    public static double[][] removeNaNs (double[] x, double[] y) {
@@ -337,7 +337,7 @@ public class MathFunctionUtil {
     * <DIV ALIGN="CENTER" CLASS="mathdisplay">
     * &int;<SUB>a</SUB><SUP>b</SUP><I>f</I> (<I>x</I>)<I>dx</I>,
     * </DIV><P></P>
-    * where <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN> is the function defined by <TT>func</TT> evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>,
+    * where <SPAN CLASS="MATH"><I>f</I> (<I>x</I>)</SPAN> is the function defined by <TT>func</TT> evaluated at $x$,
     *  by dividing <SPAN CLASS="MATH">[<I>a</I>, <I>b</I>]</SPAN> in <SPAN CLASS="MATH"><I>n</I> =</SPAN>&nbsp;<TT>numIntervals</TT> intervals of length
     *  
     * <SPAN CLASS="MATH"><I>h</I> = (<I>b</I> - <I>a</I>)/<I>n</I></SPAN>. The integral is estimated by

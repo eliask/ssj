@@ -95,13 +95,13 @@ public class MultipleDatasetChart  {
    /**
     * Initializes a new <TT>MultipleDatasetChart</TT> instance.
     *    <TT>title</TT> sets a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT> is a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    the $x$-axis, and <TT>YLabel</TT> is a short description of the $y$-axis.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     */
    public MultipleDatasetChart (String title, String XLabel, String YLabel)  {
@@ -138,9 +138,9 @@ public class MultipleDatasetChart  {
 
 
    /**
-    * Returns the chart's domain axis (<SPAN CLASS="MATH"><I>x</I></SPAN>-axis) object.
+    * Returns the chart's domain axis ($x$-axis) object.
     * 
-    * @return chart's domain axis (<SPAN CLASS="MATH"><I>x</I></SPAN>-axis) object.
+    * @return chart's domain axis ($x$-axis) object.
     * 
     */
    public Axis getXAxis()  {
@@ -149,9 +149,9 @@ public class MultipleDatasetChart  {
 
 
    /**
-    * Returns the chart's range axis (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) object.
+    * Returns the chart's range axis ($y$-axis) object.
     * 
-    * @return chart's range axis (<SPAN CLASS="MATH"><I>y</I></SPAN>-axis) object.
+    * @return chart's range axis ($y$-axis) object.
     * 
     */
    public Axis getYAxis()  {
@@ -206,7 +206,7 @@ public class MultipleDatasetChart  {
 
 
    /**
-    * Sets new <SPAN CLASS="MATH"><I>x</I></SPAN>-axis and <SPAN CLASS="MATH"><I>y</I></SPAN>-axis bounds, with format: <TT>axisRange</TT> = [xmin, xmax, ymin, ymax].
+    * Sets new $x$-axis and $y$-axis bounds, with format: <TT>axisRange</TT> = [xmin, xmax, ymin, ymax].
     * 
     * @param axisRange new axis ranges.
     * 
@@ -348,9 +348,9 @@ public class MultipleDatasetChart  {
     *    only if the corner points are multiples of the stepping. <TT>xstep</TT>
     *    and <TT>ystep</TT> sets the stepping in each direction.
     * 
-    * @param xstep sets the stepping in the <SPAN CLASS="MATH"><I>x</I></SPAN>-direction.
+    * @param xstep sets the stepping in the $x$-direction.
     * 
-    *    @param ystep sets the stepping in the <SPAN CLASS="MATH"><I>y</I></SPAN>-direction.
+    *    @param ystep sets the stepping in the $y$-direction.
     * 
     * 
     */

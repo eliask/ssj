@@ -35,11 +35,11 @@ import umontreal.iro.lecuyer.rng.MRG32k3a;
  * instances of a given {@link RandomStream} implementation via the
  * {@link #newInstance(()) newInstance} method.
  * The class name of the implementation to be used must be passed to
- * the constructor as a <TT>String</TT>, which must be the name of
+ * the constructor as a {@code String}, which must be the name of
  * a nullary constructor of a {@link RandomStream} object
  * (i.e., a constructor that has no parameters).
  * The streams are constructed by the factory by reflection from this
- * <TT>String</TT>. 
+ * {@code String}. 
  * 
  */
 public class BasicRandomStreamFactory implements RandomStreamFactory {

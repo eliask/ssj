@@ -43,7 +43,7 @@ import umontreal.iro.lecuyer.functions.MathFunction;
  * <I>p</I>(<I>x</I>) = nCr(<I>n</I> + <I>x</I> - 1, <I>x</I>)<I>p</I><SUP>n</SUP>(1 - <I>p</I>)<SUP>x</SUP>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for <I>x</I> = 0, 1, 2,&#8230;
  * </DIV><P></P>
  * where nCr is defined in {@link BinomialDist}.
- * This <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN> can be interpreted as the probability of having <SPAN CLASS="MATH"><I>x</I></SPAN> failures
+ * This <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN> can be interpreted as the probability of having $x$ failures
  * before the <SPAN CLASS="MATH"><I>n</I></SPAN>th success in a sequence of independent Bernoulli trials
  * with  probability of success <SPAN CLASS="MATH"><I>p</I></SPAN>.
  * For <SPAN CLASS="MATH"><I>n</I> = 1</SPAN>, this gives the <SPAN  CLASS="textit">geometric</SPAN> distribution.

@@ -33,7 +33,7 @@ package umontreal.iro.lecuyer.probdist;
  * (or probability) 
  * <SPAN CLASS="MATH"><I>p</I>(<I>x</I>) = <I>P</I>[<I>X</I> = <I>x</I>]</SPAN>, distribution function <SPAN CLASS="MATH"><I>F</I>(<I>x</I>)</SPAN>,
  * complementary distribution function <SPAN CLASS="MATH">bar(F)(<I>x</I>)</SPAN>,
- * and inverse distribution function <SPAN CLASS="MATH"><I>F</I><SUP>-1</SUP>(<I>u</I>)</SPAN>, for a random variable <SPAN CLASS="MATH"><I>X</I></SPAN>
+ * and inverse distribution function <SPAN CLASS="MATH"><I>F</I><SUP>-1</SUP>(<I>u</I>)</SPAN>, for a random variable $x$
  * with a discrete distribution over the integers.
  * 
  * <P>
@@ -97,7 +97,7 @@ public abstract class DiscreteDistributionInt implements Distribution {
 
 
    /**
-    * Returns <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN>, the probability of <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Returns <SPAN CLASS="MATH"><I>p</I>(<I>x</I>)</SPAN>, the probability of $x$.
     * 
     * @param x value at which the mass function must be evaluated
     * 
@@ -108,7 +108,7 @@ public abstract class DiscreteDistributionInt implements Distribution {
 
 
    /**
-    * Returns the distribution function <SPAN CLASS="MATH"><I>F</I></SPAN> evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>
+    * Returns the distribution function <SPAN CLASS="MATH"><I>F</I></SPAN> evaluated at $x$
     * (see).
     *   Calls the {@link #cdf(int) cdf}<TT>(int)</TT> method.
     * 
@@ -123,7 +123,7 @@ public abstract class DiscreteDistributionInt implements Distribution {
 
 
    /**
-    * Returns the distribution function <SPAN CLASS="MATH"><I>F</I></SPAN> evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>
+    * Returns the distribution function <SPAN CLASS="MATH"><I>F</I></SPAN> evaluated at $x$
     * (see).
     * 
     * @param x value at which the distribution function must be evaluated
@@ -168,7 +168,7 @@ public abstract class DiscreteDistributionInt implements Distribution {
     * Returns the lower limit <SPAN CLASS="MATH"><I>x</I><SUB>a</SUB></SPAN> of the support of the probability
     *  mass function. The probability is 0 for all <SPAN CLASS="MATH"><I>x</I> &lt; <I>x</I><SUB>a</SUB></SPAN>.
     * 
-    * @return <SPAN CLASS="MATH"><I>x</I></SPAN> lower limit of support
+    * @return $x$ lower limit of support
     * 
     */
    public int getXinf() {
@@ -180,7 +180,7 @@ public abstract class DiscreteDistributionInt implements Distribution {
     * Returns the upper limit <SPAN CLASS="MATH"><I>x</I><SUB>b</SUB></SPAN> of the support of the  probability
     *  mass function. The probability is 0 for all <SPAN CLASS="MATH"><I>x</I> &gt; <I>x</I><SUB>b</SUB></SPAN>.
     * 
-    * @return <SPAN CLASS="MATH"><I>x</I></SPAN> upper limit of support
+    * @return $x$ upper limit of support
     * 
     */
    public int getXsup() {

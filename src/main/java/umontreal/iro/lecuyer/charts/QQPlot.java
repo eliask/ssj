@@ -33,7 +33,7 @@ package umontreal.iro.lecuyer.charts;
 /**
  * This class implements <SPAN  CLASS="textit">QQ-plot</SPAN> (or quantile-quantile plot)
  * objects that compare two probability distributions.
- * The data is given as a list of <SPAN CLASS="MATH"><I>x</I></SPAN>-coordinates 
+ * The data is given as a list of $x$-coordinates 
  * <SPAN CLASS="MATH">(<I>x</I><SUB>1</SUB>, <I>x</I><SUB>2</SUB>,&#8230;, <I>x</I><SUB>n</SUB>)</SPAN>,
  * and one is given a reference continuous probability distribution  <SPAN CLASS="MATH"><I>F</I>(<I>x</I>)</SPAN>.
  * One first sorts the <SPAN CLASS="MATH"><I>x</I><SUB>i</SUB></SPAN> in ascending order, then noted <SPAN CLASS="MATH"><I>x</I><SUB>(i)</SUB></SPAN>, and
@@ -81,7 +81,7 @@ public class QQPlot extends XYLineChart  {
    /**
     * Constructs a new <TT>QQPlot</TT> instance using the points <TT>X</TT>.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT>  a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    the $x$-axis, and <TT>YLabel</TT>  a short description of the $y$-axis.
     *    The plot is a QQ-plot of the points
     *    
     * <SPAN CLASS="MATH">(<I>F</I><SUP>-1</SUP>(<I>p</I><SUB>i</SUB>), <I>x</I><SUB>(i)</SUB>)</SPAN>, 
@@ -93,9 +93,9 @@ public class QQPlot extends XYLineChart  {
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param dist Reference distribution
     * 
@@ -110,14 +110,14 @@ public class QQPlot extends XYLineChart  {
 
 
    /**
-    * Similar to the constructor {@link #QQPlot(String,String,String,ContinuousDistribution,double[]) QQPlot}<TT>(title, XLabel, YLabel, dist, X)</TT> above, except that only <SPAN  CLASS="textit">the first</SPAN> <TT>numPoints</TT> of <TT>X</TT>
+    * Similar to the constructor {@link #QQPlot(String,String,String,ContinuousDistribution,double[]) QQPlot}<TT>(title, XLabel, YLabel, dist, X)</TT> above, except that only <SPAN  CLASS="textit">the first</SPAN> {@code numPoints} of <TT>X</TT>
     *     are plotted.
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param dist Reference distribution
     * 
@@ -142,8 +142,8 @@ public class QQPlot extends XYLineChart  {
    /**
     * Constructs a new <TT>QQPlot</TT> instance.
     *    <TT>title</TT> is a title, <TT>XLabel</TT> is a short description of
-    *    the <SPAN CLASS="MATH"><I>x</I></SPAN>-axis, and <TT>YLabel</TT>  a short description of the <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
-    *    The input vectors in <TT>data</TT> represents several sets of <SPAN CLASS="MATH"><I>x</I></SPAN>-points.
+    *    the $x$-axis, and <TT>YLabel</TT>  a short description of the $y$-axis.
+    *    The input vectors in {@code data} represents several sets of $x$-points.
     *    <SPAN CLASS="MATH"><I>r</I></SPAN> determine the set of points to be plotted in the QQ-plot, that is,
     *    one will plot only the points <TT>data[r][i]</TT>,
     *    for 
@@ -153,9 +153,9 @@ public class QQPlot extends XYLineChart  {
     * 
     * @param title chart title.
     * 
-    *    @param XLabel Label on <SPAN CLASS="MATH"><I>x</I></SPAN>-axis.
+    *    @param XLabel Label on $x$-axis.
     * 
-    *    @param YLabel Label on <SPAN CLASS="MATH"><I>y</I></SPAN>-axis.
+    *    @param YLabel Label on $y$-axis.
     * 
     *    @param dist Reference distribution
     * 

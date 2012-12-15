@@ -38,9 +38,9 @@ import optimization.*;
  * A faster inversion method is implemented here for this special case.
  * Because of the symmetry around 1/2, four series are used to compute the
  * <TT>cdf</TT>, two around <SPAN CLASS="MATH"><I>x</I> = 0</SPAN> and two around <SPAN CLASS="MATH"><I>x</I> = 1/2</SPAN>.
- * Given <SPAN CLASS="MATH"><I>u</I></SPAN>, one then solves each series for <SPAN CLASS="MATH"><I>x</I></SPAN> by using the
+ * Given <SPAN CLASS="MATH"><I>u</I></SPAN>, one then solves each series for $x$ by using the
  *  Newton-Raphson method which shows quadratic convergence when the
- * starting iterate is close enough to the solution <SPAN CLASS="MATH"><I>x</I></SPAN>.
+ * starting iterate is close enough to the solution $x$.
  * 
  */
 public class BetaSymmetricalDist extends BetaDist {
@@ -150,7 +150,7 @@ public class BetaSymmetricalDist extends BetaDist {
    }
 
    /**
-    * Returns the density evaluated at <SPAN CLASS="MATH"><I>x</I></SPAN>.
+    * Returns the density evaluated at $x$.
     * 
     */
    public static double density (double alpha, double x) {
@@ -184,12 +184,12 @@ public class BetaSymmetricalDist extends BetaDist {
     * <SPAN CLASS="MATH">0 &lt; <I>&#945;</I> = <I>&#946;</I></SPAN> = <TT>alpha</TT>.
     *   Uses four different hypergeometric series
     *   to compute the distribution <SPAN CLASS="MATH"><I>u</I> = <I>F</I>(<I>x</I>)</SPAN>
-    *   (for the four cases <SPAN CLASS="MATH"><I>x</I></SPAN> close to 0 and 
+    *   (for the four cases $x$ close to 0 and 
     * <SPAN CLASS="MATH"><I>&#945;</I> &lt; 1</SPAN>,
-    *      <SPAN CLASS="MATH"><I>x</I></SPAN> close to 0 and 
-    * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1</SPAN>,  <SPAN CLASS="MATH"><I>x</I></SPAN> close to 1/2 and 
+    *      $x$ close to 0 and 
+    * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1</SPAN>,  $x$ close to 1/2 and 
     * <SPAN CLASS="MATH"><I>&#945;</I> &lt; 1</SPAN>,
-    *   and  <SPAN CLASS="MATH"><I>x</I></SPAN> close to 1/2 and 
+    *   and  $x$ close to 1/2 and 
     * <SPAN CLASS="MATH"><I>&#945;</I> &gt; 1</SPAN>),
     *   which are then solved by Newton's method for the solution of equations.
     *   For 

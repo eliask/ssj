@@ -23,8 +23,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cmake.generator>Visual Studio 10</cmake.generator>
-        <cmake.platform>Win32</cmake.platform>
+        <cmake.generator>Unix Makefiles</cmake.generator>
+        <cmake.platform>Linux</cmake.platform>
         <cmake.config>Release</cmake.config>
     </properties>
     <scm>
@@ -118,7 +118,7 @@
                                 ${project.basedir}
                             </sourcePath>
                             <targetPath>
-                                ${project.build.directory}\native
+                                ${project.build.directory}/native
                             </targetPath>
                             <generator>${cmake.generator}</generator>
                             <environmentVariables>
@@ -255,7 +255,7 @@
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.4</version>
                 <configuration>
-                    <executable>gpg2.exe</executable>
+                    <executable>gpg</executable>
                     <useAgent>true</useAgent>
                 </configuration>
                 <executions>

@@ -272,12 +272,22 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
                     <finalName>rs.jar</finalName>
                     <descriptors>
                         <descriptor>src/main/assembly/bundle.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
+                    <execution>
+                        <id>make-my-jar-with-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
                     <execution>
                         <phase>verify</phase>
                         <goals>
